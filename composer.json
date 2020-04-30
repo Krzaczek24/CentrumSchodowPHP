@@ -1,0 +1,20 @@
+{
+    "require": {
+        "illuminate/database": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CS\\": "app/",
+            "CS\\Constants\\": "app/Constants/",
+            "CS\\Controllers\\": "app/Controllers/",
+            "CS\\Core\\": "app/Core/",
+            "CS\\Enums\\": "app/Enums",
+            "CS\\Helpers\\": "app/Helpers/",
+            "CS\\Models\\": "app/Models/",
+            "CS\\Models\\Database\\": "app/Models/Database/"
+        }
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.6"
+    }
+}

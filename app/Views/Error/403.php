@@ -1,0 +1,1 @@
+<h2>Brak uprawnień aby wyświetlić tę stronę</h2>
