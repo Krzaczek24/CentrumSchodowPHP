@@ -8,7 +8,7 @@ namespace CS\Constants;
  */
 class LoggerConstants
 {
-    public static $filesPath = "../logs/";
+    public static $filesPath = __DIR__ . "/../../logs/";
     public static $filesWriteMode = FILE_APPEND;
     public static $filesExtension = ".log";
     public static $errorFileName = "errors";

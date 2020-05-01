@@ -16,9 +16,7 @@ class ErrorController extends Controller
      */
     public function index($code = 400, $parameters = [])
     {
-        
-
-        $this->view("Error/index", [
+        $this->view("Error/index", null, [
             "code" => $code,
             "parameters" => $parameters
         ]);
