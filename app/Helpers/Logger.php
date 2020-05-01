@@ -9,7 +9,6 @@ use InvalidArgumentException;
 /**
  * Helper to write messages or exceptions to proper files
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 class Logger
 {

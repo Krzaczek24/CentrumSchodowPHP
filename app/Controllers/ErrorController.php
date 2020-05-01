@@ -7,7 +7,6 @@ use CS\Core\Controller;
 /**
  * Errors page controller
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 class ErrorController extends Controller
 {

@@ -27,7 +27,6 @@ Logger::writeLog($log_message);
 /**
  * Base controller class
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 abstract class Controller
 {

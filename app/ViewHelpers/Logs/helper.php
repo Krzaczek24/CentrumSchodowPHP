@@ -36,7 +36,6 @@
  * Draws table with data passed as array of strings
  * @param array $dataArray array with log records
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 function drawTable($dataArray)
 {

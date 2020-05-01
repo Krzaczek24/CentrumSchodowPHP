@@ -11,7 +11,6 @@ class ControllersMethodNotFoundException extends Exception {}
 /**
  * Main app
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 class Application
 {

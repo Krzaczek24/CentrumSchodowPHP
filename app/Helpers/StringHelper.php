@@ -5,8 +5,6 @@ namespace CS\Helpers;
 /**
  * Helper providing additional operations on strings
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
- * @since 1.0 startsWith and endsWith functions
  */
 class StringHelper
 {

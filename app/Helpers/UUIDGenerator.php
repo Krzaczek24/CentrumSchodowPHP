@@ -7,8 +7,6 @@ use Exception;
 /**
  * Helper generating UUIDs
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
- * @since 1.0 getRandomID and getUUIDv4 functions
  */
 class UUIDGenerator
 {

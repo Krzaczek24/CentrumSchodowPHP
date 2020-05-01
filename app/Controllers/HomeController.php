@@ -9,7 +9,6 @@ use Exception;
 /**
  * Home page controller
  * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
- * @version 1.0
  */
 class HomeController extends Controller
 {
