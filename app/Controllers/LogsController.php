@@ -4,6 +4,8 @@ namespace CS\Controllers;
 
 use CS\Constants\LoggerConstants;
 use CS\Core\Controller;
+use CS\Core\Response;
+use CS\Enums\FileOperationResults;
 use Exception;
 
 /**
@@ -17,27 +19,45 @@ class LogsController extends Controller
      */
     public function index($date = "")
     {
+        $this->view("logs/index", $this->getFreshLogs($date));
+    }
+
+    /**
+     * Returns content of log files
+     */
+    private function getFreshLogs($date)
+    {
         if ($date == "")
         {
             $date = date("Y-m-d");
         }
 
-        $errors_path = LoggerConstants::$filesPath . "errors" . LoggerConstants::$filesExtension;
-        $logs_path = LoggerConstants::$filesPath . $date . LoggerConstants::$filesExtension;
-
         $model = $this->model("LogsModel");
+
+        $errors_path = LoggerConstants::$filesPath . LoggerConstants::$errorFileName . LoggerConstants::$filesExtension;
+        $logs_path = LoggerConstants::$filesPath . $date . LoggerConstants::$filesExtension;
 
         if(file_exists($errors_path))
         {
-            $model->errors = explode(PHP_EOL, file_get_contents($errors_path));
+            $model->errors = array_reverse(explode(PHP_EOL, file_get_contents($errors_path)));
         }
         
         if(file_exists($logs_path))
         {
-            $model->dayLogs = explode(PHP_EOL, file_get_contents($logs_path));
+            $model->dayLogs = array_reverse(explode(PHP_EOL, file_get_contents($logs_path)));
         }
 
-        $this->view("logs/index", $model);
+        return $model;
+    }
+
+    /**
+     * Returns new logs every javascript interval call
+     */
+    public function refresh($date = "")
+    {
+        $response = new Response();
+        $response->body = $this->getFreshLogs($date);
+        $response->send();
     }
 
     /**
@@ -55,37 +75,41 @@ class LogsController extends Controller
             }
         }
 
+        $response = new Response();
+        $response->body = new class {
+            public $resultMessage;
+        };
+
         switch($_POST['used_button'])
         {
-            case "clear":
-                $this->clearLogs();
-                $this->index();
+            case "clear":                
+                $response->body->resultMessage = $this->clearLogs();
                 break;
             default:
                 break;
         }
+
+        $response->send();
     }
 
     private function clearLogs()
     {
-        $result = "";
-
         $errorsLogFile = LoggerConstants::getErrorsLogFileFullPath();
         if(file_exists($errorsLogFile))
         {
             try
             {
                 unlink($errorsLogFile);
-                $result = "file_successfully_removed";
+                $result = FileOperationResults::SuccessfullyRemoved;
             }
             catch (Exception $ex)
             {
-                $result = "file_removal_failed";
+                $result = FileOperationResults::CannotBeRemoved;
             }
         }
         else
         {
-            $result = "file_not_exists";
+            $result = FileOperationResults::DoesNotExists;
         }
 
         return $result;

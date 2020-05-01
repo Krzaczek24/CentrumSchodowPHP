@@ -43,7 +43,7 @@ function drawTable($dataArray)
     $table = $dom->createElement('table');
     $table->setAttribute('class', 'log-table');
 
-    foreach (array_reverse($dataArray) as $row)
+    foreach ($dataArray as $row)
     {
         $tr = $dom->createElement('tr');
         $table->appendChild($tr);
