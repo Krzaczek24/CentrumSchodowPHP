@@ -1,0 +1,43 @@
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.logs-container
+{
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 37.5vh;
+    width: 99%;
+    color: green;
+    padding: 3px;
+    border: gray 2px solid;
+}
+
+.buttons
+{
+    float: left;
+    padding: 6px 12px;
+    margin: 24px 0px 0px 16px;
+}
+
+.log-table-details:nth-child(1)
+{
+    color: yellow;
+}
+
+.log-table-details:nth-child(2)
+{
+    color: lightgreen;
+}
+
+.log-table-details:nth-child(3)
+{
+    color: lightsalmon;
+}
+
+.log-table-details:nth-child(4), .log-table-details:nth-child(5)
+{
+    color: white;
+}

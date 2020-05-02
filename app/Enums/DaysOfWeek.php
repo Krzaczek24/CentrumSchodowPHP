@@ -2,7 +2,9 @@
 
 namespace CS\Enums;
 
-abstract class DaysOfWeek
+use CS\Core\Enum;
+
+abstract class DaysOfWeek extends Enum
 {
     const Monday    = 0;
     const Tuesday   = 1;

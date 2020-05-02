@@ -2,7 +2,9 @@
 
 namespace CS\Enums;
 
-abstract class FileOperationResults
+use CS\Core\Enum;
+
+abstract class FileOperationResults extends Enum
 {
     const AlreadyExists       = "FILE_ALREADY_EXISTS";
     const DoesNotExists       = "FILE_DOES_NOT_EXISTS";

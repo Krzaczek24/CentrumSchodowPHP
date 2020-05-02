@@ -19,7 +19,7 @@ else
     $_SESSION['STARTED_AT'] = new DateTime();
     $_SESSION['LAST_UPDATE'] = new DateTime();
     $_SESSION['IP_ADDRESS'] = getenv('REMOTE_ADDR');
-    $log_message = "New session started [" . $_SESSION['ID'] . "] from ip [" . $_SESSION['IP_ADDRESS'] . "] started at [" . $_SESSION['STARTED_AT']->format('Y-m-d H:i:s') . "]";
+    $log_message = "New session started [" . $_SESSION['ID'] . "] from ip [" . $_SESSION['IP_ADDRESS'] . "]";
 }
 
 Logger::writeLog($log_message);

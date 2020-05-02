@@ -1,36 +1,6 @@
-<style>
-    .log-table-details:nth-child(1)
-    {
-        color: yellow;
-    }
-
-    .log-table-details:nth-child(2)
-    {
-        color: lightgreen;
-    }
-
-    .log-table-details:nth-child(3)
-    {
-        color: lightsalmon;
-    }
-
-    .log-table-details:nth-child(4), .log-table-details:nth-child(5)
-    {
-        color: white;
-    }
-</style>
-
-<script>
-    $(document).ready(function() 
-    {
-        $('.log-table td').each(function(idx, elem)
-        {
-            $(elem).html(elem.innerText.replace(/\[/g, '[<span class="log-table-details">').replace(/\]/g, '</span>]'));
-        });
-    });
-</script>
-
 <?php
+
+use CS\Enums\FileOperationResults;
 
 /**
  * Draws table with data passed as array of strings
@@ -56,4 +26,10 @@ function drawTable($dataArray)
 
     $dom->appendChild($table);
     echo $dom->saveHTML();
+}
+
+function getFilesOperationResults()
+{
+    $enum = FileOperationResults::toArray();
+    return json_encode($enum);
 }

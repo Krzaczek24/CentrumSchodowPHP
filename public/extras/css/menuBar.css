@@ -1,0 +1,66 @@
+.sticky-top-container
+{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: chartreuse;
+}
+
+.main-menu-clickable
+{
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition: background-color 0.5s;
+}
+
+.main-menu-clickable:hover
+{
+    background-color: red;
+}
+
+.main-menu-bar
+{
+    width: 90vw;
+    height: 54px;
+    margin: 0px auto;
+}
+
+.main-menu-bar-logo
+{
+    height: 100%;
+    width: 170px;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+
+.main-menu-bar-logo img
+{
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-menu-bar-table
+{
+    float: right;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.main-menu-bar-table-item
+{
+    padding: 0px 20px;
+}
+
+.main-menu-bar-table-item-content
+{
+    
+}
+
+.main-menu-bar-table-item-content-text
+{
+
+}
