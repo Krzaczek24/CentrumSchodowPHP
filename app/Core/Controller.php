@@ -49,6 +49,7 @@ abstract class Controller
      */
     public function view($view, $model, $data=[])
     {
-        require_once("../app/Views/$view.php");
+        $view = ucfirst(strtolower($view));
+        require_once(__DIR__ . "/../Views/$view.php");
     }
 }
