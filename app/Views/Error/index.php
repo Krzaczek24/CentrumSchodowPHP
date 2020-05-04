@@ -12,15 +12,15 @@
         </h1>
 
         <?php
-            $code_page = $data["code"] . ".php";
+            $codeErrorPagePath = __DIR__ . "/" . $data["code"] . ".php";
 
-            if (file_exists("../app/views/error/$code_page"))
+            if (file_exists($codeErrorPagePath))
             {
-                require($code_page);
+                require($codeErrorPagePath);
             }
             else
             {
-                require("unknown.php");
+                require(__DIR__ . "/unknown.php");
             }
         ?>
     </body>
