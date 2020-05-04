@@ -15,7 +15,6 @@
 
 <?php
 
-use CS\Helpers\StringHelper;
 use CS\Models\SiteMapModel;
 
 function getSitesMap()
@@ -24,7 +23,19 @@ function getSitesMap()
         new SiteMapModel("Strona główna", "home"),
         new SiteMapModel("Realizacje", "#anchor"),
         new SiteMapModel("Oferta", "offer", [
-            new SiteMapModel("Test", "testowa")
+            new SiteMapModel("Test", "Test"),
+            new SiteMapModel("Krzaczełke", "Krzaczełke"),
+            new SiteMapModel("Cheeki", "Cheeki")
+        ]),
+        new SiteMapModel("Cheeki", "offer", [
+            new SiteMapModel("Obi Wan Kenobi", "Obi Wan Kenobi"),
+            new SiteMapModel("Yoda", "Yoda"),
+            new SiteMapModel("Qui-Gon Jinn", "Qui-Gon Jinn")
+        ]),
+        new SiteMapModel("Breeki", "offer", [
+            new SiteMapModel("Cień Czarnobyla", "Cień Czarnobyla"),
+            new SiteMapModel("Czyste Niebo", "Czyste Niebo"),
+            new SiteMapModel("Zew Prypeci", "Zew Prypeci")
         ])
     ];
 }
@@ -49,16 +60,14 @@ function drawMainMenuTable()
         $span->setAttribute('class', 'main-menu-bar-table-item-content-text');
 
         $div = $dom->createElement('div');
-        $div->setAttribute('class', 'main-menu-bar-table-item-content');
+        $div->setAttribute('class', 'main-menu-bar-table-item-content main-menu-clickable');
+        $div->setAttribute('data-href', $item->getAddress());
         $div->appendChild($span);
 
         $td = $dom->createElement('td');
-        $td->setAttribute('class', 'main-menu-bar-table-item main-menu-clickable');
-        if (StringHelper::startsWith($item->getAddress(), '#'))
-        {
-            $td->setAttribute('data-href', $item->getAddress());
-        }
+        $td->setAttribute('class', 'main-menu-bar-table-item');
         $td->appendChild($div);
+        drawSubMenuTable($dom, $td, $item->getSubSites());
 
         $tr->appendChild($td);
     }
@@ -68,7 +77,30 @@ function drawMainMenuTable()
     echo $dom->saveHTML();
 }
 
-function drawSubMenuTable()
+function drawSubMenuTable($dom, $targetHtmlElement, $subSites = [])
 {
+    $table = $dom->createElement('table');
+    $table->setAttribute('class', 'submenu-table');
 
+    foreach ($subSites as $subSite)
+    {
+        $span = $dom->createElement('span', $subSite->getDisplayName());
+        $span->setAttribute('class', 'submenu-table-item-content-text');
+
+        $div = $dom->createElement('div');
+        $div->setAttribute('class', 'submenu-table-item-content main-menu-clickable');
+        $div->setAttribute('data-href', $subSite->getAddress());     
+        $div->appendChild($span);
+
+        $td = $dom->createElement('td');
+        $td->setAttribute('class', 'submenu-table-item');
+        $td->appendChild($div);
+
+        $tr = $dom->createElement('tr');
+        $tr->appendChild($td);
+
+        $table->appendChild($tr);
+    }
+
+    $targetHtmlElement->appendChild($table);
 }

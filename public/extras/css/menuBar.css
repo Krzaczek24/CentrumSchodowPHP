@@ -9,8 +9,7 @@
 .main-menu-clickable
 {
     cursor: pointer;
-    transition-timing-function: linear;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s linear;
 }
 
 .main-menu-clickable:hover
@@ -52,15 +51,53 @@
 
 .main-menu-bar-table-item
 {
-    padding: 0px 20px;
+    padding: 0px;
+}
+
+.main-menu-bar-table-item:hover .submenu {
+    visibility: visible;
+    opacity: 1;
 }
 
 .main-menu-bar-table-item-content
 {
-    
+    height: 100%;
+    display: table;
 }
 
 .main-menu-bar-table-item-content-text
 {
+    padding: 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
 
+.submenu-table
+{
+    visibility: hidden;
+    opacity: 0;
+    border-collapse: collapse;
+    position: absolute;
+    top: 54px;
+    background-color: sandybrown;
+    transition: visibility 0.3s, opacity 0.3s ease-out;
+}
+
+.submenu-table-item
+{
+    padding: 0px;
+}
+
+.submenu-table-item-content
+{
+    height: 36px;
+    width: 100%;
+    display: table;
+}
+
+.submenu-table-item-content-text
+{
+    padding: 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
 }
