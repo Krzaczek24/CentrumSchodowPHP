@@ -54,7 +54,7 @@
     padding: 0px;
 }
 
-.main-menu-bar-table-item:hover .submenu {
+.main-menu-bar-table-item:hover .submenu-table {
     visibility: visible;
     opacity: 1;
 }
