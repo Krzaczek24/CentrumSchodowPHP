@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="/public/extras/js/home.js"></script>
+        <link rel="stylesheet" href="/public/extras/css/common.css">
         <link rel="stylesheet" href="/public/extras/css/home.css">
     </head>
     <body>

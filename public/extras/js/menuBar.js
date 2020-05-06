@@ -14,6 +14,11 @@ $(document).ready(function() {
 
     $('.main-menu-clickable[data-href]').each(function(idx, elem) {
         if (elem.dataset.href.startsWith('#') ||  elem.dataset.href.startsWith('.')) {
+            if ($(elem.dataset.href).length == 0) {
+                $(elem).parent().remove();
+                return;
+            }
+
             $(elem).click(function() {
                 scrollToElement(elem.dataset.href, -64);
             });

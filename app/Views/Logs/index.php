@@ -10,6 +10,7 @@
             var filesOperationResults = $.parseJSON('<?php echo getFilesOperationResults() ?>');
         </script>
         <script src="/public/extras/js/logs.js"></script>
+        <link rel="stylesheet" href="/public/extras/css/common.css">
         <link rel="stylesheet" href="/public/extras/css/logs.css">
     </head>
     <body>
