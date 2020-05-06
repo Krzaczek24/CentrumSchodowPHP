@@ -3,43 +3,67 @@
     width: 100%;
     position: sticky;
     top: 0px;
-    background-color: chartreuse;
+    background-color: rgba(0, 0, 0, 0.60);
+    transition: background-color 0.3s ease-out;
+}
+
+.top
+{
+    background-color: transparent;
 }
 
 .main-menu-clickable
 {
     cursor: pointer;
-    transition: background-color 0.5s linear;
-}
-
-.main-menu-clickable:hover
-{
-    background-color: red;
 }
 
 .main-menu-bar
 {
+    color: white;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
+    font-weight: 700;
+    text-transform: uppercase;
     width: 90vw;
     height: 54px;
     margin: 0px auto;
+    transition: height 0.3s, color 0.3s ease-out;
+}
+
+.top .main-menu-bar
+{
+    color: black;
+    height: 84px;
 }
 
 .main-menu-bar-logo
 {
     height: 100%;
-    width: 170px;
+    width: 230px;
     float: left;
     position: relative;
     margin-left: 10px;
+    transition: height 0.3s ease-out;
 }
 
 .main-menu-bar-logo img
 {
-    height: 80%;
+    height: 48px;
     position: absolute;
     top: 50%;
     left: 50%;
+    opacity: 100%;
     transform: translate(-50%, -50%);
+    transition: height 0.3s, opacity 0.3s ease-out;
+}
+
+.main-menu-bar-logo img.hidden
+{
+    opacity: 0%;
+}
+
+.top .main-menu-bar-logo img
+{
+    height: 54px;
 }
 
 .main-menu-bar-table
@@ -54,7 +78,8 @@
     padding: 0px;
 }
 
-.main-menu-bar-table-item:hover .submenu-table {
+.main-menu-bar-table-item:hover .submenu
+{
     visibility: visible;
     opacity: 1;
 }
@@ -67,20 +92,50 @@
 
 .main-menu-bar-table-item-content-text
 {
-    padding: 0px 20px;
+    padding: 0px 20px;    
     display: table-cell;
     vertical-align: middle;
 }
 
-.submenu-table
+.main-menu-bar-table-item-content-text > span
 {
+    padding-bottom: 5px;
+    border-bottom: solid 2px transparent;
+    transition: border-bottom-color 0.3s ease-out;
+}
+
+.main-menu-bar-table-item:hover .main-menu-bar-table-item-content-text > span
+{
+    border-bottom-color: white;
+}
+
+.top .main-menu-bar-table-item:hover .main-menu-bar-table-item-content-text > span
+{
+    border-bottom-color: black;
+}
+
+.submenu
+{
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
     visibility: hidden;
     opacity: 0;
-    border-collapse: collapse;
     position: absolute;
     top: 54px;
-    background-color: sandybrown;
-    transition: visibility 0.3s, opacity 0.3s ease-out;
+    background-color: rgb(64, 64, 64);
+    transition: visibility 0.3s, top 0.3s, opacity 0.3s ease-out;
+    padding: 5px;
+}
+
+.top .submenu
+{
+    top: 76px;
+}
+
+.submenu-table
+{
+    border-collapse: collapse;
 }
 
 .submenu-table-item
@@ -97,7 +152,13 @@
 
 .submenu-table-item-content-text
 {
-    padding: 0px 20px;
+    padding: 0px 20px 0px 10px;
     display: table-cell;
     vertical-align: middle;
+    transition: padding 0.3s ease-out;
+}
+
+.submenu-table-item-content-text:hover
+{
+    padding: 0px 10px 0px 20px;
 }

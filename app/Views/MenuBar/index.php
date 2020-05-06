@@ -2,11 +2,12 @@
 <script src="/public/extras/js/menuBar.js"></script>
 <link rel="stylesheet" href="/public/extras/css/menuBar.css">
 
-<div class="sticky-top-container">
+<div class="sticky-top-container top">
     <div class="main-menu-bar">
         <a href="..">
-            <div class="main-menu-bar-logo main-menu-clickable">
-                <img src="/public/extras/images/logo.png" alt="Centrum Schodów">
+            <div class="main-menu-bar-logo" alt="Centrum Schodów">
+                <img id="logo-black" src="/public/extras/images/logo-black.png">
+                <img id="logo-white" src="/public/extras/images/logo-white.png" class="hidden">
             </div>
         </a>
         <?php drawMainMenuTable() ?>
@@ -20,19 +21,19 @@ use CS\Models\SiteMapModel;
 function getSitesMap()
 {
     return [
-        new SiteMapModel("Strona główna", "home"),
-        new SiteMapModel("Realizacje", "#anchor"),
-        new SiteMapModel("Oferta", "offer", [
-            new SiteMapModel("Test", "Test"),
-            new SiteMapModel("Krzaczełke", "Krzaczełke"),
-            new SiteMapModel("Cheeki", "Cheeki")
+        new SiteMapModel("strona główna", "home"),
+        new SiteMapModel("realizacje", "#anchor"),
+        new SiteMapModel("oferta", "offer", [
+            new SiteMapModel("test", "Test"),
+            new SiteMapModel("krzaczełke", "Krzaczełke"),
+            new SiteMapModel("cheeki", "Cheeki")
         ]),
-        new SiteMapModel("Cheeki", "offer", [
+        new SiteMapModel("cheeki", "offer", [
             new SiteMapModel("Obi Wan Kenobi", "Obi Wan Kenobi"),
             new SiteMapModel("Yoda", "Yoda"),
             new SiteMapModel("Qui-Gon Jinn", "Qui-Gon Jinn")
         ]),
-        new SiteMapModel("Breeki", "offer", [
+        new SiteMapModel("breeki", "offer", [
             new SiteMapModel("Cień Czarnobyla", "Cień Czarnobyla"),
             new SiteMapModel("Czyste Niebo", "Czyste Niebo"),
             new SiteMapModel("Zew Prypeci", "Zew Prypeci")
@@ -57,17 +58,23 @@ function drawMainMenuTable()
     foreach ($map as $item)
     {
         $span = $dom->createElement('span', $item->getDisplayName());
-        $span->setAttribute('class', 'main-menu-bar-table-item-content-text');
+
+        $innerDiv = $dom->createElement('div');
+        $innerDiv->setAttribute('class', 'main-menu-bar-table-item-content-text');
+        $innerDiv->appendChild($span);
 
         $div = $dom->createElement('div');
         $div->setAttribute('class', 'main-menu-bar-table-item-content main-menu-clickable');
         $div->setAttribute('data-href', $item->getAddress());
-        $div->appendChild($span);
+        $div->appendChild($innerDiv);
 
         $td = $dom->createElement('td');
         $td->setAttribute('class', 'main-menu-bar-table-item');
         $td->appendChild($div);
-        drawSubMenuTable($dom, $td, $item->getSubSites());
+        if ($item->hasAnySubSites())
+        {
+            drawSubMenuTable($dom, $td, $item->getSubSites());
+        }
 
         $tr->appendChild($td);
     }
@@ -79,6 +86,9 @@ function drawMainMenuTable()
 
 function drawSubMenuTable($dom, $targetHtmlElement, $subSites = [])
 {
+    $subMenu = $dom->createElement('div');
+    $subMenu->setAttribute('class', 'submenu');
+
     $table = $dom->createElement('table');
     $table->setAttribute('class', 'submenu-table');
 
@@ -102,5 +112,7 @@ function drawSubMenuTable($dom, $targetHtmlElement, $subSites = [])
         $table->appendChild($tr);
     }
 
-    $targetHtmlElement->appendChild($table);
+    $subMenu->appendChild($table);
+
+    $targetHtmlElement->appendChild($subMenu);
 }
