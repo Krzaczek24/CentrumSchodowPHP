@@ -18,6 +18,11 @@
     cursor: pointer;
 }
 
+.main-menu-clickable.scrolled-on .main-menu-bar-table-item-content-text > span
+{
+    border-bottom-color: white;
+}
+
 .main-menu-bar
 {
     color: white;
@@ -107,7 +112,7 @@
 
 .main-menu-bar-table-item:hover .main-menu-bar-table-item-content-text > span
 {
-    border-bottom-color: white;
+    border-bottom-color: gold;
 }
 
 .top .main-menu-bar-table-item:hover .main-menu-bar-table-item-content-text > span

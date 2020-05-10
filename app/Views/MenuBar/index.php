@@ -22,7 +22,9 @@ function getSitesMap()
 {
     return [
         new SiteMapModel("strona główna", "home"),
-        new SiteMapModel("realizacje", "#anchor"),
+        new SiteMapModel("realizacje", "#anchor1"),
+        new SiteMapModel("realizacje2", "#anchor2"),
+        new SiteMapModel("realizacje3", "#anchor3"),
         new SiteMapModel("oferta", "offer", [
             new SiteMapModel("test", "Test"),
             new SiteMapModel("krzaczełke", "Krzaczełke"),
