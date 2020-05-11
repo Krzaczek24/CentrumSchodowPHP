@@ -1,4 +1,3 @@
-<script src="/public/extras/js/commonFunctions.js"></script>
 <script src="/public/extras/js/menuBar.js"></script>
 <link rel="stylesheet" href="/public/extras/css/menuBar.css">
 
@@ -6,11 +5,11 @@
     <div class="main-menu-bar">
         <a href="..">
             <div class="main-menu-bar-logo" alt="Centrum Schodów">
-                <img id="logo-black" src="/public/extras/images/logo-black.png">
-                <img id="logo-white" src="/public/extras/images/logo-white.png" class="hidden">
+                <img id="logo-black" src="/public/extras/images/logo/logo-black.png">
+                <img id="logo-white" src="/public/extras/images/logo/logo-white.png" class="hidden">
             </div>
         </a>
-        <?php drawMainMenuTable() ?>
+        <?php drawMainMenuTable(getSitesMap()) ?>
     </div>
 </div>
 
@@ -45,19 +44,17 @@ function getSitesMap()
 
 /**
  * Draws main menu bar table
- * @author Tomasz Drewek <tomaszdrewek94@gmail.com>
+ * @param array $siteMap array of SiteMapModel
  */
-function drawMainMenuTable()
+function drawMainMenuTable($siteMap)
 {
-    $map = getSitesMap();
-
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;
     $table = $dom->createElement('table');
     $table->setAttribute('class', 'main-menu-bar-table');
     $tr = $dom->createElement('tr');
 
-    foreach ($map as $item)
+    foreach ($siteMap as $item)
     {
         $span = $dom->createElement('span', $item->getDisplayName());
 
@@ -86,6 +83,12 @@ function drawMainMenuTable()
     echo $dom->saveHTML();
 }
 
+/**
+ * Draws submenu panels
+ * @param object $dom DOMDocument object used to create dom structure
+ * @param object $targetHtmlElement DOMElement object in the middle of which it will be formed submenu
+ * @param array $subSites list of subsites for which it will be created buttons
+ */
 function drawSubMenuTable($dom, $targetHtmlElement, $subSites = [])
 {
     $subMenu = $dom->createElement('div');

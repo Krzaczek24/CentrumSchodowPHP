@@ -1,7 +1,7 @@
 .sticky-top-container
 {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.60);
     transition: background-color 0.3s ease-out;

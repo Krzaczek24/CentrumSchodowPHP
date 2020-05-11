@@ -5,12 +5,16 @@
         <title>Centrum Schodów - Tczew</title>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/public/extras/js/common.js"></script>
         <script src="/public/extras/js/home.js"></script>
         <link rel="stylesheet" href="/public/extras/css/common.css">
         <link rel="stylesheet" href="/public/extras/css/home.css">
     </head>
     <body>
-        <?php require(__DIR__ . "/../MenuBar/index.php"); ?>
+        <?php
+            require(__DIR__ . "/../MenuBar/index.php");
+            require(__DIR__ . "/../FullScreenGallery/index.php");
+        ?>
         <p><strong>Witaj na stronie domowej</strong></p>
         <p>Wybacz że jest tutaj tak pusto</p>
         <p>Serwis ten będzie się rozwijał</p>
