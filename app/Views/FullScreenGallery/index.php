@@ -31,11 +31,11 @@ function renderSlides($galleryElements)
 
     foreach ($galleryElements as $slide)
     {
-        $background = $dom->createElement('img');
-        $background->setAttribute('src', $slide->getImagePath());
-        $background->setAttribute('class', 'image-fill');
+        $img = $dom->createElement('img');
+        $img->setAttribute('src', $slide->getImagePath());
+        $img->setAttribute('class', 'image-fill');
 
-        $dom->appendChild($background);
+        $dom->appendChild($img);
     }
 
     echo $dom->saveHTML();
