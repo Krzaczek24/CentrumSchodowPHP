@@ -7,25 +7,27 @@ function GalleryImageChangerClass() {
 
     this.init = function(settings) {
         this.currentImageIndex = -1;
+        this.timerTicks = 0;
+        this.timerRunning = false;
+        this.timerCheckInterval = 100;
+        this.timerMaxTicks = settings.interval / this.timerCheckInterval;
         this.imagesAmount = $(settings.imagesSelector).length;
         this.interval = settings.interval;
 
+        this.leftArrowImagePath = settings.leftArrowImagePath;
+        this.rightArrowImagePath = settings.rightArrowImagePath;
         this.containerSelector = settings.containerSelector;
         this.imagesSelector = settings.imagesSelector;
-        this.sideChangeButtonSelector = settings.sideChangeButtonSelector;
         
         this.prepareGallery();
     };
     this.prepareGallery = function() {
         if (this.imagesAmount > 1) {
+            if (this.imagesAmount == 2) { this.setPreviousImage = this.setNextImage; }
+            this.addChangeImageButtons();
+            this.setMouseTimerEvents();
             this.startAutoChanging();
-
-            if (this.imagesAmount == 2) {
-                this.setPreviousImage = this.setNextImage;
-            }
         } else {
-            $(this.sideChangeButtonSelector).remove();
-
             if (this.imagesAmount == 1) {
                 var images = this.getImages();
                 $(images.next).addClass('image-show');
@@ -36,9 +38,9 @@ function GalleryImageChangerClass() {
     };
     this.getImages = function() {
         return {
-            previous: $(this.imagesSelector).get(modulo(this.currentImageIndex - 1, this.imagesAmount)),
-            current: $(this.imagesSelector).get(this.currentImageIndex),
-            next: $(this.imagesSelector).get(modulo(this.currentImageIndex + 1, this.imagesAmount))
+            previous: $(this.containerSelector + ' > img').get(modulo(this.currentImageIndex - 1, this.imagesAmount)),
+            current: $(this.containerSelector + ' > img').get(this.currentImageIndex),
+            next: $(this.containerSelector + ' > img').get(modulo(this.currentImageIndex + 1, this.imagesAmount))
         }
     };
     this.setNextImage = function() {
@@ -71,9 +73,30 @@ function GalleryImageChangerClass() {
     };    
     this.startAutoChanging = function() {
         this.setNextImage();
+
         setInterval(() => {
-            this.setNextImage();
-        }, this.interval);
+            if (this.timerRunning && this.timerTicks++ >= this.timerMaxTicks) {
+                this.timerTicks = 0;
+                this.setNextImage();
+            }
+        }, this.timerCheckInterval);
+    };
+    this.setMouseTimerEvents = function() {
+        $(this.containerSelector).hover(function() {
+            self.timerRunning = false;
+            self.timerTicks = 0;
+        }, function() {
+            self.timerRunning = true;
+        });
+    };
+    this.addChangeImageButtons = function() {
+        var template = '<div class="gallery-arrow gallery-side-arrow gallery-arrow-DIR" data-direction="DIR"><div class="non-hovered"><img src="IMG_SRC"></div><div class="hovered"></div></div>' ;
+        var leftButton = template.replace(/DIR/g, 'left').replace(/IMG_SRC/, this.leftArrowImagePath);
+        var rightButton = template.replace(/DIR/g, 'right').replace(/IMG_SRC/, this.rightArrowImagePath);
+
+        $(this.containerSelector).append(leftButton + rightButton);
+        $(this.containerSelector).find('.gallery-arrow-left').click(this.setPreviousImage);
+        $(this.containerSelector).find('.gallery-arrow-right').click(this.setNextImage);
     };
 };
 
@@ -85,7 +108,8 @@ function setAutomaticGalleryImageChanger(interval = 1000) {
     CSG.FullScreenGallery.GalleryImageChanger.init({
         containerSelector: '.full-screen-container',
         imagesSelector: '.full-screen-container > img',
-        sideChangeButtonSelector: '.full-screen-container > .gallery-side-arrow',
+        leftArrowImagePath: '/public/extras/images/icons/left-arrow.svg',
+        rightArrowImagePath: '/public/extras/images/icons/right-arrow.svg',
         interval: interval
     });
 };
@@ -121,6 +145,7 @@ function prepareArrowsHoverActions() {
                 throw new Error('Unrecognised arrow direction type: [' + direction + ']');
         }
     });
+    
 
     $('.gallery-side-arrow').hover(function() {
         //console.log($(this).attr('class') + ' hovered');
@@ -129,7 +154,13 @@ function prepareArrowsHoverActions() {
     });
 }
 
+function setDownScrollArrowButtonAction() {
+    $('.gallery-arrow[data-direction="down"]').click(function() {
+        scrollBelowElement($(this).parent());
+    });
+}
+
 $(document).ready(function() {
     setAutomaticGalleryImageChanger(10000);
-    prepareArrowsHoverActions();
+    setDownScrollArrowButtonAction();
 });

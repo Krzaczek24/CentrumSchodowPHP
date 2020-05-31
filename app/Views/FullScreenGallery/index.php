@@ -4,26 +4,8 @@
 <div class="full-screen-container">
     <?php renderSlides(getGalleryElements()); ?>
 
-    <div class="gallery-arrow gallery-side-arrow gallery-arrow-left" data-direction="left">
-        <div class="non-hovered">
-            <img src="/public/extras/images/icons/left-arrow.svg">
-        </div>
-        <div class="hovered">
-            
-        </div>
-    </div>
-    <div class="gallery-arrow gallery-side-arrow gallery-arrow-right" data-direction="right">
-        <div class="non-hovered">
-            <img src="/public/extras/images/icons/right-arrow.svg">
-        </div>
-        <div class="hovered">
-            
-        </div>
-    </div>
     <div class="gallery-arrow gallery-bottom-arrow" data-direction="down">
-        <div class="non-hovered">
-            <img src="/public/extras/images/icons/down-arrow.svg">
-        </div>
+        <img src="/public/extras/images/icons/down-arrow.svg">
     </div>
 </div>
 
