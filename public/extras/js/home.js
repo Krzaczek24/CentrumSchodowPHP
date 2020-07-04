@@ -4,4 +4,9 @@ $(document).ready(function() {
             alert('Sesja została wyczyszczona!');
         });
     });
+
+    runGallery({
+        interval: 10000,
+        bottomArrow: true
+    });
 });

@@ -28,7 +28,10 @@ var prepareMenuButtons = function() {
             });
         } else {
             $(elem).click(function() {
-                window.location.href=elem.dataset.href;
+                if (!elem.dataset.href.startsWith('/')) {
+                    var slash = '/';
+                }
+                window.location.href = slash + elem.dataset.href;
             });
         }
     });

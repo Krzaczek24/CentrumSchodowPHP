@@ -104,10 +104,10 @@ function GalleryImageChangerClass() {
  * Setup automatic gallery image changer.
  * @param {integer} interval time between image change
  */
-function setAutomaticGalleryImageChanger(interval = 1000) {
+function setAutomaticGalleryImageChanger(containerSelector, interval = 1000) {
     CSG.FullScreenGallery.GalleryImageChanger.init({
-        containerSelector: '.full-screen-container',
-        imagesSelector: '.full-screen-container > img',
+        containerSelector: containerSelector,
+        imagesSelector: containerSelector + ' > img',
         leftArrowImagePath: '/public/extras/images/icons/left-arrow.svg',
         rightArrowImagePath: '/public/extras/images/icons/right-arrow.svg',
         interval: interval
@@ -154,13 +154,21 @@ function prepareArrowsHoverActions() {
     });
 }
 
+function addBottomArrow(containerSelector) {
+    $(containerSelector).append('<div class="gallery-arrow gallery-bottom-arrow" data-direction="down"><img src="/public/extras/images/icons/down-arrow.svg"></div>');    
+}
+
 function setDownScrollArrowButtonAction() {
     $('.gallery-arrow[data-direction="down"]').click(function() {
         scrollBelowElement($(this).parent());
     });
 }
 
-$(document).ready(function() {
-    setAutomaticGalleryImageChanger(10000);
-    setDownScrollArrowButtonAction();
-});
+function runGallery(settings) {
+    var containerSelector = '.main-container';
+    setAutomaticGalleryImageChanger(containerSelector, settings.interval);
+    if (settings.bottomArrow === true) {
+        addBottomArrow(containerSelector);
+        setDownScrollArrowButtonAction();
+    }
+}

@@ -13,8 +13,17 @@
     <body>
         <?php
             require(__DIR__ . "/../MenuBar/index.php");
-            require(__DIR__ . "/../FullScreenGallery/index.php");
         ?>
+        <div class="full-screen-container">
+            <?php
+                require(__DIR__ . "/../FullScreenGallery/index.php");
+                renderSlides(getGalleryElements());
+            ?>
+            <div class="gallery-arrow gallery-bottom-arrow" data-direction="down">
+                <img src="/public/extras/images/icons/down-arrow.svg">
+            </div>
+        </div>
+
         <p><strong>Witaj na stronie domowej</strong></p>
         <p>Wybacz że jest tutaj tak pusto</p>
         <p>Serwis ten będzie się rozwijał</p>
@@ -106,3 +115,18 @@
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
     </body>
 </html>
+
+<?php
+
+use CS\Models\GalleryElementModel;
+
+function getGalleryElements()
+{
+    return [
+        new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo5.jpg', null, null)
+    ];
+}
