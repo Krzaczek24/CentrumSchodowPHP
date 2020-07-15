@@ -16,7 +16,7 @@
         ?>
         <div class="full-screen-container">
             <?php
-                require(__DIR__ . "/../FullScreenGallery/index.php");
+                require(__DIR__ . "/../AutoGallery/index.php");
                 renderSlides(getGalleryElements());
             ?>
         </div>

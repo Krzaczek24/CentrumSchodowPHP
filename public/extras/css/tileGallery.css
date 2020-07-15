@@ -1,0 +1,36 @@
+table.tile-gallery-main-container
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    table-layout: fixed;
+    border-spacing: 12px;
+}
+
+table.tile-gallery-main-container td
+{
+    height: 10.5vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.tile-gallery-main-container div.img-container
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+table.tile-gallery-main-container img.image-fill
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: transform 0.6s;
+}
+
+table.tile-gallery-main-container img.image-fill:hover
+{
+    transform: scale(1.25);
+}

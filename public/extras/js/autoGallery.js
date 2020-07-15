@@ -1,4 +1,4 @@
-CSG.FullScreenGallery = {
+CSG.AutoGallery = {
     GalleryImageChanger: new GalleryImageChangerClass()
 };
 
@@ -105,7 +105,7 @@ function GalleryImageChangerClass() {
  * @param {integer} interval time between image change
  */
 function setAutomaticGalleryImageChanger(containerSelector, interval = 1000) {
-    CSG.FullScreenGallery.GalleryImageChanger.init({
+    CSG.AutoGallery.GalleryImageChanger.init({
         containerSelector: containerSelector,
         imagesSelector: containerSelector + ' > img',
         leftArrowImagePath: '/public/extras/images/icons/left-arrow.svg',
@@ -125,7 +125,7 @@ function prepareArrowsHoverActions() {
                     //console.log($(this).attr('class') + ' unhovered');
                 });
 
-                $(elem).click(CSG.FullScreenGallery.GalleryImageChanger.setPreviousImage);
+                $(elem).click(CSG.AutoGallery.GalleryImageChanger.setPreviousImage);
                 break;
             case 'right':
                 $(elem).hover(function() {
@@ -134,7 +134,7 @@ function prepareArrowsHoverActions() {
                     //console.log($(this).attr('class') + ' unhovered');
                 });
 
-                $(elem).click(CSG.FullScreenGallery.GalleryImageChanger.setNextImage);
+                $(elem).click(CSG.AutoGallery.GalleryImageChanger.setNextImage);
                 break;
             case 'down':
                 $(elem).click(function() {

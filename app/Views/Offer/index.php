@@ -19,105 +19,39 @@
             require(__DIR__ . "/../MenuBar/index.php");
             include_once(__DIR__ . "/../SlidingInLabel/index.php");
         ?>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
+
+        <div class="full-width page-section">
             <?php
                 $slideInLabel = new Label();
                 $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
                 echo $slideInLabel->getHTMLedLabel();
             ?>
         </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
+        
         <div class="full-width">
             <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
+                require(__DIR__ . "/../TileGallery/index.php");
+                renderTiles(getGalleryElements());
             ?>
         </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <p><strong>Główna strona z ofertą XYZ</strong></p>
-        <p>testerere main page</p>
-        <div class="full-width">
-            <?php
-                $slideInLabel = new Label();
-                $slideInLabel->addLine("Nasza ", "oferta");
-                $slideInLabel->addLine("jest");
-                $slideInLabel->addLine("", "najlepsza");
-                echo $slideInLabel->getHTMLedLabel();
-            ?>
-        </div>
-        <br />
     </body>
 </html>
+
+<?php
+
+use CS\Models\GalleryElementModel;
+
+function getGalleryElements()
+{
+    return [
+        new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo5.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
+        new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null)
+    ];
+}
