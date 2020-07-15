@@ -1,12 +1,16 @@
 body
 {
     margin: 0px;
+    background-color: white;
 }
 
 .full-screen-container
 {
     width: 100%;
     height: 100vh;
-    /* position: relative;
-    overflow: hidden; */
+}
+
+.full-width
+{
+    width: 100%;
 }

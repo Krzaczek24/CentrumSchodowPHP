@@ -56,3 +56,16 @@ function modulo(divident, divisor) {
 
     return divident % divisor;
 }
+
+/**
+ * Check if element is visible in current window
+ */
+function isInCurrentViewPort($element) {
+    var viewPortStart = $(window).scrollTop();
+    var viewPortEnd = viewPortStart + $(window).height();
+
+    var elementStart = $element.offset().top;
+    var elementEnd = elementStart + $element.height();
+
+    return elementEnd < viewPortEnd && elementStart > viewPortStart;
+}

@@ -165,7 +165,7 @@ function setDownScrollArrowButtonAction() {
 }
 
 function runGallery(settings) {
-    var containerSelector = '.main-container';
+    var containerSelector = '.auto-gallery-main-container';
     setAutomaticGalleryImageChanger(containerSelector, settings.interval);
     if (settings.bottomArrow === true) {
         addBottomArrow(containerSelector);
