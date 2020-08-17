@@ -1,5 +1,5 @@
-<script src="/public/extras/js/tileGallery.js"></script>
-<link rel="stylesheet" href="/public/extras/css/tileGallery.css">
+<script src="/public/extras/js/tableGallery.js"></script>
+<link rel="stylesheet" href="/public/extras/css/helpers/tableGallery.css">
 
 <?php
 
@@ -7,7 +7,7 @@
  * Renders slides for given array of gallery elements
  * @param GalleryElementModel[] $galleryElements list of objects with path, header and description
  */
-function renderTiles($galleryElements)
+function renderTableGallery($galleryElements)
 {
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;

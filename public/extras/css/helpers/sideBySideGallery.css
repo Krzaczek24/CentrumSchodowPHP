@@ -1,0 +1,52 @@
+.side-by-side-gallery-main-container
+{
+    width: 100%;
+}
+
+.side-by-side-gallery-main-container table
+{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+/* .side-by-side-gallery-main-container table tr
+{
+    width: 100%;
+} */
+
+.side-by-side-gallery-main-container table tr td
+{
+    width: 50%;
+    
+    padding: 0px;
+}
+
+.side-by-side-gallery-image-container
+{
+    width: 100%;
+}
+
+.side-by-side-gallery-image-container img
+{
+    width: 100%;
+    height: 450px;
+}
+
+.side-by-side-gallery-text-container
+{
+    width: fit-content;
+    margin: auto;
+    max-width: 400px;
+}
+
+.side-by-side-gallery-text-container span
+{
+    text-overflow: clip;   
+}
+
+/* no właśnie - to będzie do wywalenie po refactoringu */
+
+.side-by-side-gallery-text-container .tile-with-multi-text-title-container
+{
+    font-size: 42px;
+}

@@ -1,7 +1,37 @@
+@font-face
+{
+    font-family: "OpenSans";
+    src: url("/public/extras/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: "OpenSans";
+    font-weight: bold;
+    src: url("/public/extras/fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face
+{
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-style: italic;
+    src: url("/public/extras/fonts/OpenSans/OpenSans-BoldItalic.ttf");
+}
+
+@font-face
+{
+    font-family: "OpenSans";
+    font-style: italic;
+    src: url("/public/extras/fonts/OpenSans/OpenSans-Italic.ttf");
+}
+
 body
 {
     margin: 0px;
     background-color: white;
+    font-family: 'OpenSans';
+    color: #4b4e53;
 }
 
 .full-screen-container
@@ -18,4 +48,12 @@ body
 .page-section
 {
     padding: 64px 0px;
+}
+
+.underline
+{
+    margin-top: 3px;
+    background-color: #4b4e53;
+    width: 84px;
+    height: 3px;
 }

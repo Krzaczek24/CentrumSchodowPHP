@@ -7,7 +7,7 @@ use DOMDocument;
 /**
  * Contains lines to display in sliding in label and generates ready HTML node
  */
-class Label
+class LabelModel
 {
     private $lines;
 
@@ -17,7 +17,7 @@ class Label
     }
 
     /**
-     * @param LabelLine $line a LabelLine object
+     * @param LabelLineModel $line a LabelLineModel object
      */
     public function addReadyLine($line)
     {
@@ -30,7 +30,7 @@ class Label
      */
     public function addLine($normal = "", $bold = "")
     {
-        array_push($this->lines, new LabelLine($normal, $bold));
+        array_push($this->lines, new LabelLineModel($normal, $bold));
     }
 
     /**
@@ -51,7 +51,7 @@ class Label
         }
 
         $underline = $dom->createElement('div');
-        $underline->setAttribute('class', 'slide-in-label-underline');
+        $underline->setAttribute('class', 'underline');
 
         $main->appendChild($underline);
 

@@ -2,12 +2,10 @@
 
 namespace CS\Models\Frontend\SlideInLabel;
 
-use DOMDocument;
-
 /**
  * Contains sliding in label lines sentences and generates ready HTML node
  */
-class LabelLine
+class LabelLineModel
 {
     private $normal;
     private $bold;

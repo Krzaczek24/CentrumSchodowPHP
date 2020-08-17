@@ -1,5 +1,5 @@
 <script src="/public/extras/js/autoGallery.js"></script>
-<link rel="stylesheet" href="/public/extras/css/autoGallery.css">
+<link rel="stylesheet" href="/public/extras/css/helpers/autoGallery.css">
 
 <?php
 
@@ -7,7 +7,7 @@
  * Renders slides for given array of gallery elements
  * @param GalleryElementModel[] $galleryElements list of objects with path, header and description
  */
-function renderSlides($galleryElements)
+function renderAutoGallery($galleryElements)
 {
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;

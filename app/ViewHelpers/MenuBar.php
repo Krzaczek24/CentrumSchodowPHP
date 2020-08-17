@@ -1,5 +1,5 @@
 <script src="/public/extras/js/menuBar.js"></script>
-<link rel="stylesheet" href="/public/extras/css/menuBar.css">
+<link rel="stylesheet" href="/public/extras/css/helpers/menuBar.css">
 
 <div class="sticky-top-container top">
     <div class="main-menu-bar">

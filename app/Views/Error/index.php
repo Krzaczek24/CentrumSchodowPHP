@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/public/extras/css/error.css">
     </head>
     <body>
-        <?php require(__DIR__ . "/../MenuBar/index.php"); ?>
+        <?php require(__DIR__ . "/../../ViewHelpers/MenuBar/index.php"); ?>
         <div class="main-container">
             <div class="central-container">
                 <h1>Błąd <span class="code"><?=$data["code"]?></span></h1>

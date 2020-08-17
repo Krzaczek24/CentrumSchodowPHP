@@ -1,0 +1,94 @@
+.tile-with-multi-text-main-container
+{
+    width: fit-content;
+    margin: auto;
+    height: 440px;
+}
+
+/* LEFT SIDE */
+.tile-with-multi-text-image-container
+{
+    height: 100%;
+    width: fit-content;
+    float: left;
+}
+
+.tile-with-multi-text-image-container img
+{
+    height: 100%;
+}
+
+/* RIGHT SIDE */
+.tile-with-multi-text-text-container
+{
+    height: 100%;
+    width: fit-content;
+    float: left;
+    margin-left: 16px;
+}
+
+.tile-with-multi-text-text-container table
+{
+    border-spacing: 0px 20px;
+    margin: 12px 0px;
+}
+
+.tile-with-multi-text-text-container table td
+{
+    vertical-align: top;
+}
+
+.tile-with-multi-text-title-container
+{
+    width: 100%;
+    text-transform: uppercase;
+    overflow-x: hidden;
+    margin: 24px 12px;
+    font-size: 60px;
+}
+
+.tile-with-multi-text-title-line
+{
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.tile-with-multi-text-title-line:nth-child(1n + 1)
+{
+    margin-top: -12px;
+}
+
+.tile-with-multi-text-title-bold
+{
+    font-weight: bold;
+}
+
+/* SUBTILE */
+.tile-with-multi-text-subtile-image
+{
+    position: relative;
+    top: 0px;
+    float: left;
+}
+
+.tile-with-multi-text-subtile-text
+{
+    margin-left: 16px;
+    float: left;
+    width: fit-content;
+}
+
+.tile-with-multi-text-subtile-text span:first-child
+{
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tile-with-multi-text-subtile-text span:last-child
+{
+    float: left;
+    max-width: 320px;
+    font-size: 14px;
+}

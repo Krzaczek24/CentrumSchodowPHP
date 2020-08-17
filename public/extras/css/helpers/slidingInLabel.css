@@ -17,14 +17,6 @@
     font-weight: bold;
 }
 
-.slide-in-label-underline
-{
-    margin-top: 3px;
-    background-color: black;
-    width: 72px;
-    height: 4px;
-}
-
 .slide-in-label-line,
 .slide-in-label-underline
 {
