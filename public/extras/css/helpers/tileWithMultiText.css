@@ -24,13 +24,13 @@
     height: 100%;
     width: fit-content;
     float: left;
-    margin-left: 16px;
+    margin-left: 32px;
 }
 
 .tile-with-multi-text-text-container table
 {
     border-spacing: 0px 20px;
-    margin: 12px 0px;
+    margin: 12px -6px;
 }
 
 .tile-with-multi-text-text-container table td
@@ -43,7 +43,7 @@
     width: 100%;
     text-transform: uppercase;
     overflow-x: hidden;
-    margin: 24px 12px;
+    margin: 24px 0px;
     font-size: 60px;
 }
 

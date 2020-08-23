@@ -1,5 +1,10 @@
 .divider-main-container
 {
+    width: 100%;
+}
+
+.divider-centering-block
+{
     width: fit-content;
     margin: auto;
 }
@@ -7,21 +12,5 @@
 .divider-text
 {
     font-size: 32px;
-    line-height: 96px;
-}
-
-.divider-line
-{
-    border: 0px;
-    border-top: 1px solid #eee;
-}
-
-.divider-line-top
-{
-    margin-top: 64px;
-}
-
-.divider-line-bottom
-{
-    margin-bottom: 64px;
+    line-height: 128px;
 }

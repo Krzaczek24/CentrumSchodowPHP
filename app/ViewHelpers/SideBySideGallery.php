@@ -16,7 +16,7 @@ function renderSideBySideGallery($galleryElements)
     $dom->formatOutput = true;
 
     $main = $dom->createElement('div');
-    $main->setAttribute('class', 'side-by-side-gallery-main-container');
+    $main->setAttribute('class', 'side-by-side-gallery-main-container top-bottom-border');
 
     $table = $dom->createElement('table');
 

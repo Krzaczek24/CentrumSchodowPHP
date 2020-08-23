@@ -1,24 +1,27 @@
 <?php
 
-namespace CS\Models;
+namespace CS\Models\Frontend\Gallery;
 
 class GalleryElementModel
 {
     private $imagePath;
     private $title;
     private $description;
+    private $url;
 
     /**
      * Comment here
      * @param string $imagePath
      * @param string $title
      * @param string $description
+     * @param string $url
      */
-    public function __construct($imagePath, $title, $description)
+    public function __construct($imagePath, $title = null, $description = null, $url = null)
     {
         $this->imagePath = $imagePath;
         $this->title = $title;
         $this->description = $description;
+        $this->url = $url;
     }
 
     public function getImagePath()
@@ -34,5 +37,10 @@ class GalleryElementModel
     public function getDescription()
     {
         return $this->description;
+    }
+
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

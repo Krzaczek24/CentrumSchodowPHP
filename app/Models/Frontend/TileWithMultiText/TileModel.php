@@ -20,6 +20,12 @@ class TileModel
      */
     public function __construct($imageUrl = "", $mainTitle = null, $subTiles = null)
     {
+        if (count($subTiles) > 4)
+        {
+            throw new Exception("This model can hold maximum 4 subtiles!");
+            return;
+        }
+
         $this->imageUrl = $imageUrl;
         $this->mainTitle = $mainTitle;
         $this->subTiles = $subTiles == null ? [] : $subTiles;

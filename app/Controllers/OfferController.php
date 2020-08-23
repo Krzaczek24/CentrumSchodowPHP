@@ -23,4 +23,25 @@ class OfferController extends Controller
 
         $this->view("Offer/wood", $model, []);
     }
+
+    public function woodsteel()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/wood-steel", $model, []);
+    }
+
+    public function carpet()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/carpet", $model, []);
+    }
+
+    public function spiral()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/spiral", $model, []);
+    }
 }

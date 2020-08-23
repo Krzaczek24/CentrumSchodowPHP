@@ -47,7 +47,7 @@ body
 
 .page-section
 {
-    padding: 64px 0px;
+    padding-top: 84px;
 }
 
 .underline
@@ -56,4 +56,10 @@ body
     background-color: #4b4e53;
     width: 84px;
     height: 3px;
+}
+
+.top-bottom-border
+{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }

@@ -6,8 +6,9 @@
 /**
  * Renders slides for given array of gallery elements
  * @param GalleryElementModel[] $galleryElements list of objects with path, header and description
+ * @param integer $columnsNumber number of columns in the table, if not stated then number of columns is equal to number of images
  */
-function renderTableGallery($galleryElements)
+function renderTableGallery($galleryElements, $columnsNumber = null)
 {
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;
@@ -15,28 +16,38 @@ function renderTableGallery($galleryElements)
     $main = $dom->createElement('table');
     $main->setAttribute('class', 'tile-gallery-main-container');
 
-    $maxColumns = 3;
-    $maxRows = ceil(count($galleryElements) / $maxColumns);
+    $galleryElementsCount = count($galleryElements);
+    $maxColumns = is_null($columnsNumber) ? $galleryElementsCount : $columnsNumber;
+    $maxRows = ceil($galleryElementsCount / $maxColumns);
     for ($row = 0; $row < $maxRows; $row++)
     {
         $tr = $dom->createElement('tr');
         for ($column = 0; $column < $maxColumns; $column++)
         {
             $td = $dom->createElement('td');
+            $td->setAttribute('class', 'tile-gallery-cell');
 
             $imgNo = $row * $maxColumns + $column;
             if (isset($galleryElements[$imgNo]))
             {
-                $container = $dom->createElement('div');
-                $container->setAttribute('class', 'img-container');
+                $td->setAttribute('onclick', 'window.location.href=\'' . $galleryElements[$imgNo]->getUrl() . '\'');
 
-                $img = $dom->createElement('img');
-                $img->setAttribute('src', $galleryElements[$imgNo]->getImagePath());
-                $img->setAttribute('class', 'image-fill');
+                $text = $dom->createElement('span', $galleryElements[$imgNo]->getTitle());
 
-                $container->appendChild($img);
+                $textContainer = $dom->createElement('div');
+                $textContainer->setAttribute('class', 'tile-gallery-text-container');
+                $textContainer->appendChild($text);
 
-                $td->appendChild($container);
+                $td->appendChild($textContainer);
+
+                $image = $dom->createElement('img');
+                $image->setAttribute('src', $galleryElements[$imgNo]->getImagePath());
+
+                $imageContainer = $dom->createElement('div');
+                $imageContainer->setAttribute('class', 'tile-gallery-image-container');
+                $imageContainer->appendChild($image);
+
+                $td->appendChild($imageContainer);
             }
 
             $tr->appendChild($td);

@@ -11,23 +11,18 @@ function renderDivider($text)
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;
 
-    $topLine = $dom->createElement('hr');
-    $topLine->setAttribute('class', 'divider-line divider-line-top');
-
     $main = $dom->createElement('div');
-    $main->setAttribute('class', 'divider-main-container');
+    $main->setAttribute('class', 'divider-main-container top-bottom-border');
+
+    $center = $dom->createElement('div');
+    $center->setAttribute('class', 'divider-centering-block');
 
     $text = $dom->createElement('span', $text);
     $text->setAttribute('class', 'divider-text');
 
-    $bottomLine = $dom->createElement('hr');
-    $bottomLine->setAttribute('class', 'divider-line divider-line-bottom');
-
-    $main->appendChild($text);
-
-    $dom->appendChild($topLine);
+    $center->appendChild($text);
+    $main->appendChild($center);
     $dom->appendChild($main);
-    $dom->appendChild($bottomLine);
 
     echo $dom->saveHTML();
 }

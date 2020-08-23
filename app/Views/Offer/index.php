@@ -1,6 +1,7 @@
 <!doctype html>
 
 <?php 
+    use CS\Models\Frontend\Gallery\GalleryElementModel;
     use CS\Models\Frontend\SlideInLabel\LabelModel;
 ?>
 
@@ -17,7 +18,8 @@
     <body>
         <?php
             require(__DIR__ . "/../../ViewHelpers/MenuBar.php");
-            include_once(__DIR__ . "/../../ViewHelpers/SlidingInLabel.php");
+            require(__DIR__ . "/../../ViewHelpers/SlidingInLabel.php");
+            require(__DIR__ . "/../../ViewHelpers/TableGallery.php");
         ?>
 
         <div class="full-width page-section">
@@ -30,8 +32,17 @@
         
         <div class="full-width">
             <?php
-                require(__DIR__ . "/../../ViewHelpers/TableGallery.php");
-                renderTableGallery(getGalleryElements());
+                renderTableGallery([
+                    new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo5.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
+                    new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null)
+                ], 3);
             ?>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -109,22 +120,3 @@
         <hr>
     </body>
 </html>
-
-<?php
-
-use CS\Models\GalleryElementModel;
-
-function getGalleryElements()
-{
-    return [
-        new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo5.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
-        new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null)
-    ];
-}
