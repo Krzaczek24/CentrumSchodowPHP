@@ -1,0 +1,16 @@
+.divider-main-container
+{
+    width: 100%;
+}
+
+.divider-centering-block
+{
+    width: fit-content;
+    margin: auto;
+}
+
+.divider-text
+{
+    font-size: 32px;
+    line-height: 128px;
+}

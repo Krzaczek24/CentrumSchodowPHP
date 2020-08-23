@@ -4,8 +4,8 @@
     <head>
         <title>Centrum Schodów - Tczew</title>
         <meta charset="utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <?php require_once(__DIR__ . "/../../ViewHelpers/Logs/helper.php") ?>
+        <script src="/public/extras/js/jQuery/jquery-3.5.1.min.js"></script>
+        <?php require_once(__DIR__ . "/../../ViewHelpers/Logs.php") ?>
         <script>
             var filesOperationResults = $.parseJSON('<?php echo getFilesOperationResults() ?>');
         </script>

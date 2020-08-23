@@ -60,8 +60,8 @@ var switchMenuBarStyle = function() {
 };
 
 /**
- * @param {number} scrollPosition actual scroll position
- * @param {number} shift as value is higher the higlight is faster, default value is 64px
+ * @param {integer} scrollPosition actual scroll position
+ * @param {integer} shift as value is higher the higlight is faster
  */
 var highlightProperButton = function(scrollPosition, shift = 64) {
     var scrollPositionShift = $('.sticky-top-container').height();

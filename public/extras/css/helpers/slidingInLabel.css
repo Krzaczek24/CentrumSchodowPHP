@@ -1,0 +1,24 @@
+.slide-in-label-main-container
+{
+    width: 100%;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+.slide-in-label-line
+{
+    width: fit-content;
+    font-size: 48px;
+    white-space: nowrap;
+}
+
+.slide-in-label-bold
+{
+    font-weight: bold;
+}
+
+.slide-in-label-line,
+.slide-in-label-underline
+{
+    transform: translateX(-1000px);
+}

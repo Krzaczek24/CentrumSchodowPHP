@@ -1,5 +1,9 @@
 <script src="/public/extras/js/menuBar.js"></script>
-<link rel="stylesheet" href="/public/extras/css/menuBar.css">
+<link rel="stylesheet" href="/public/extras/css/helpers/menuBar.css">
+
+<?php
+    use CS\Models\SiteMapModel;
+?>
 
 <div class="sticky-top-container top">
     <div class="main-menu-bar">
@@ -9,38 +13,28 @@
                 <img id="logo-white" src="/public/extras/images/logo/logo-white.png" class="hidden">
             </div>
         </a>
-        <?php drawMainMenuTable(getSitesMap()) ?>
+        <?php 
+            drawMainMenuTable([
+                new SiteMapModel("strona główna", "home"),
+                new SiteMapModel("realizacje", "#realizations"),
+                new SiteMapModel("oferta", "offer", [
+                    new SiteMapModel("schody drewniano-stalowe", "offer/wood-steel"),
+                    new SiteMapModel("schody dywanowe", "offer/carpet"),
+                    new SiteMapModel("schody spiralne", "offer/spiral"),
+                    new SiteMapModel("schody na beton", "offer/concrete"),
+                    new SiteMapModel("schody półkowe", "offer/shelf"),
+                    new SiteMapModel("schody drewniane", "offer/wood"),
+                    new SiteMapModel("małe schody", "offer/small"),
+                    new SiteMapModel("schody zewnętrzne", "offer/outdoor"),
+                    new SiteMapModel("balustrady i poręcze", "offer/balustrades")
+                ]),
+                new SiteMapModel("kontakt", "#contact")
+            ]);
+        ?>
     </div>
 </div>
 
 <?php
-
-use CS\Models\SiteMapModel;
-
-function getSitesMap()
-{
-    return [
-        new SiteMapModel("strona główna", "home"),
-        new SiteMapModel("realizacje", "#anchor1"),
-        new SiteMapModel("realizacje2", "#anchor2"),
-        new SiteMapModel("realizacje3", "#anchor3"),
-        new SiteMapModel("oferta", "offer", [
-            new SiteMapModel("test", "Test"),
-            new SiteMapModel("krzaczełke", "Krzaczełke"),
-            new SiteMapModel("cheeki", "Cheeki")
-        ]),
-        new SiteMapModel("cheeki", "offer", [
-            new SiteMapModel("Obi Wan Kenobi", "Obi Wan Kenobi"),
-            new SiteMapModel("Yoda", "Yoda"),
-            new SiteMapModel("Qui-Gon Jinn", "Qui-Gon Jinn")
-        ]),
-        new SiteMapModel("breeki", "offer", [
-            new SiteMapModel("Cień Czarnobyla", "Cień Czarnobyla"),
-            new SiteMapModel("Czyste Niebo", "Czyste Niebo"),
-            new SiteMapModel("Zew Prypeci", "Zew Prypeci")
-        ])
-    ];
-}
 
 /**
  * Draws main menu bar table
