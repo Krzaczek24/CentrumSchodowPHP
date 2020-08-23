@@ -24,29 +24,7 @@
             <p></p>
         </div>
     </div>
-    <div id="map" class="contact-section-map-block"></div>
-    <script>
-        function initMap() {
-            var rokitki = {
-                lat: 54.079, 
-                lng: 18.733
-            };
-
-            var map = new google.maps.Map(
-                document.getElementById('map'), 
-                {
-                    zoom: 4, 
-                    center: rokitki
-                }
-            );
-
-            var marker = new google.maps.Marker({
-                position: rokitki, 
-                map: map
-            });
-        }
-    </script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZk0KKQlqf5BVtus4LuzEbJMKndHOo_II&callback=initMap">
-    </script>
+    <div class="contact-section-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26480.103237611784!2d18.715906739563867!3d54.082032317551324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd616e3d2ed091%3A0xf97af5401ff0dbb7!2sPi%C4%99kna%203%2C%2083-112%20Rokitki!5e0!3m2!1spl!2spl!4v1598204520010!5m2!1spl!2spl" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 </div>

@@ -2,13 +2,13 @@
 {
     width: 100%;
     background-color: #eee;
-    display: inline-block;
-    padding: 84px 0px;
+    padding-top: 84px;
 }
 
 .contact-section-centering-block
 {
     width: fit-content;
+    height: 256px;
     margin: auto;
 }
 
@@ -37,4 +37,10 @@
 .contact-section-form-button
 {
     
+}
+
+.contact-section-map
+{
+    width: 100%;
+    margin-top: 36px;
 }
