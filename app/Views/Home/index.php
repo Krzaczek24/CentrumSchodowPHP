@@ -16,10 +16,11 @@
         <script src="/public/extras/js/jQuery/jquery-3.5.1.min.js"></script>
         <script src="/public/extras/js/common.js"></script>
         <script src="/public/extras/js/home.js"></script>
+        <script src="https://kit.fontawesome.com/60be4b67e7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/public/extras/css/common.css">
         <link rel="stylesheet" href="/public/extras/css/home.css">
         <?php
-            require(__DIR__ . "/../../ViewHelpers/Divider.php");
+            require(__DIR__ . "/../../ViewHelpers/Divider.php");            
             require(__DIR__ . "/../../ViewHelpers/NiceLinkButton.php");
             require(__DIR__ . "/../../ViewHelpers/SideBySideGallery.php");
             require(__DIR__ . "/../../ViewHelpers/SlidingInLabel.php");
@@ -112,7 +113,13 @@
             ?>
         </div>
 
-        <div class="page-section">
+        <div class="full-width page-section">
+            <?php
+                include_once(__DIR__ . "/../../ViewHelpers/Footer.php");
+            ?>
+        </div>
+
+        <div class="page-section" style="display: none;">
             <h1><strong>Blok testowy</strong></h1>
             <br />
             <h2>[<?= $data["text"] ?>]</h2>

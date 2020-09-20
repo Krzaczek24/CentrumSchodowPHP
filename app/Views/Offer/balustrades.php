@@ -15,7 +15,7 @@
         <?php
             require(__DIR__ . "/../../ViewHelpers/MenuBar.php");
         ?>
-        <p><strong>Podstrona z ofertą z schodami drewnianymi</strong></p>
+        <p><strong>Podstrona z ofertą z balustradami i poręczami</strong></p>
         <p>testerere sub page</p>
         
         <div id="contact" class="full-width page-section">

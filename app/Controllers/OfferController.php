@@ -17,6 +17,55 @@ class OfferController extends Controller
         $this->view("Offer/index", $model, []);
     }
 
+    public function balustrades()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/balustrades", $model, []);
+    }
+
+    public function carpet()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/carpet", $model, []);
+    }
+
+    public function concrete()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/concrete", $model, []);
+    }
+
+    public function outdoor()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/outdoor", $model, []);
+    }
+    
+    public function shelf()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/shelf", $model, []);
+    }
+
+    public function small()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/small", $model, []);
+    }
+
+    public function spiral()
+    {
+        $model = $this->model("OfferModels\\SubofferModel");
+
+        $this->view("Offer/spiral", $model, []);
+    }
+
     public function wood()
     {
         $model = $this->model("OfferModels\\SubofferModel");
@@ -29,19 +78,5 @@ class OfferController extends Controller
         $model = $this->model("OfferModels\\SubofferModel");
 
         $this->view("Offer/wood-steel", $model, []);
-    }
-
-    public function carpet()
-    {
-        $model = $this->model("OfferModels\\SubofferModel");
-
-        $this->view("Offer/carpet", $model, []);
-    }
-
-    public function spiral()
-    {
-        $model = $this->model("OfferModels\\SubofferModel");
-
-        $this->view("Offer/spiral", $model, []);
     }
 }

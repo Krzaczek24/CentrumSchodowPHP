@@ -18,7 +18,7 @@
                 new SiteMapModel("strona główna", "home"),
                 new SiteMapModel("realizacje", "#realizations"),
                 new SiteMapModel("oferta", "offer", [
-                    new SiteMapModel("schody drewniano-stalowe", "offer/wood-steel"),
+                    new SiteMapModel("schody drewniano-stalowe", "offer/woodsteel"),
                     new SiteMapModel("schody dywanowe", "offer/carpet"),
                     new SiteMapModel("schody spiralne", "offer/spiral"),
                     new SiteMapModel("schody na beton", "offer/concrete"),
