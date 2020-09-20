@@ -1,4 +1,4 @@
+.vscode/
 vendor/
 logs/*.log
-config.php
-.vscode/
+app/Config/config.php
