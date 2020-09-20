@@ -1,3 +1,4 @@
 .vscode/
 vendor/
 logs/*.log
+app/Config/config.php

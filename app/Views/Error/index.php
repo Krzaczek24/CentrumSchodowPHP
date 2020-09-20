@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/public/extras/css/error.css">
     </head>
     <body>
-        <?php require(__DIR__ . "/../../ViewHelpers/MenuBar/index.php"); ?>
+        <?php require(__DIR__ . "/../../ViewHelpers/MenuBar.php"); ?>
         <div class="main-container">
             <div class="central-container">
                 <h1>Błąd <span class="code"><?=$data["code"]?></span></h1>
@@ -29,5 +29,18 @@
                 ?>
             </div>
         </div>
+
+        <div id="contact" class="full-width page-section">
+            <?php
+                include_once(__DIR__ . "/../../ViewHelpers/ContactSection.php");
+            ?>
+        </div>
+
+        <div class="full-width page-section">
+            <?php
+                include_once(__DIR__ . "/../../ViewHelpers/Footer.php");
+            ?>
+        </div>
+
     </body>
 </html>

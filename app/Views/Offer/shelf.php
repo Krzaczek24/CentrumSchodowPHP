@@ -24,5 +24,11 @@
             ?>
         </div>
 
+        <div class="full-width page-section">
+            <?php
+                include_once(__DIR__ . "/../../ViewHelpers/Footer.php");
+            ?>
+        </div>
+
     </body>
 </html>
