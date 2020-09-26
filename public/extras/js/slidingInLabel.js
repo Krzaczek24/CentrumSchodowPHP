@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 });
 
-var animateSlidingInLabel = function(interval = 125) {
+var animateSlidingInLabel = function(interval = 250, duration = 1000) {
     $('.slide-in-label-main-container').each(function() {
         if (isInCurrentViewPort($(this)) && $(this).data('shown') === false)
         {
@@ -18,7 +18,7 @@ var animateSlidingInLabel = function(interval = 125) {
                     $(elem).animate({
                         transform: 'translateX(0)',
                         marginLeft: '25%'
-                    }) 
+                    }, duration) 
                 }, interval * idx)
             });
         }
