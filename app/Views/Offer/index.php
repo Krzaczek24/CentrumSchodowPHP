@@ -31,18 +31,18 @@
             ?>
         </div>
         
-        <div class="full-width">
+        <div class="full-width page-section">
             <?php
                 renderTableGallery([
-                    new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo5.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo1.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo2.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo3.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/photo4.jpg', null, null)
+                    new GalleryElementModel("/public/extras/images/gallery/photo1.jpg", "schody stalowo-drewniane", null, "offer/woodsteel"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo2.jpg", "schody dywanowe",          null, "offer/carpet"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo3.jpg", "schody spiralne",          null, "offer/spiral"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo4.jpg", "schody na beton",          null, "offer/concrete"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo5.jpg", "schody półkowe",           null, "offer/shelf"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo1.jpg", "schody drewniane",         null, "offer/wood"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo2.jpg", "małe schody",              null, "offer/small"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo3.jpg", "schody zewnętrzne",        null, "offer/outdoor"),
+                    new GalleryElementModel("/public/extras/images/gallery/photo4.jpg", "balustrady i poręcze",     null, "offer/balustrades")
                 ], 3);
             ?>
         </div>

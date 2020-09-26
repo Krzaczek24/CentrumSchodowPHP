@@ -51,7 +51,7 @@ class LabelModel
         }
 
         $underline = $dom->createElement('div');
-        $underline->setAttribute('class', 'underline');
+        $underline->setAttribute('class', 'underline slide-in-label-underline');
 
         $main->appendChild($underline);
 
