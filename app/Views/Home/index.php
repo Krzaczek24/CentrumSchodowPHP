@@ -95,7 +95,7 @@
             ?>
         </div>
 
-        <div class="full-width page-section">
+        <div class="full-width">
             <?php
                 renderNiceLinkButton("offer", "Wszystkie realizacje");
             ?>
