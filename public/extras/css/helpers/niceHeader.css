@@ -1,0 +1,28 @@
+.nice-header-main-container
+{
+    border-left: solid 2px #4b4e53;
+    color: #4b4e53;
+    font-size: 22pt;
+}
+
+    .nice-header-main-container span
+    {
+        line-height: 84px;
+        text-transform: uppercase;
+    }
+
+    .nice-header-main-container span:first-child
+    {
+        margin-left: 24px;
+    }
+
+    .nice-header-main-container span:not(:first-child)
+    {
+        font-weight: bold;
+    }
+
+.inverted
+{
+    border-color: #f1f1f1;
+    color: #f1f1f1;
+}

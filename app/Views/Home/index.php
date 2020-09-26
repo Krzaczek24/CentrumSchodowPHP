@@ -14,7 +14,7 @@
         <script src="/public/extras/js/home.js"></script>
         <link rel="stylesheet" href="/public/extras/css/home.css">
         <?php
-            require_once(__DIR__ . "/../../ViewHelpers/Divider.php");            
+            require_once(__DIR__ . "/../../ViewHelpers/Divider.php");
             require_once(__DIR__ . "/../../ViewHelpers/NiceLinkButton.php");
             require_once(__DIR__ . "/../../ViewHelpers/SideBySideGallery.php");
             require_once(__DIR__ . "/../../ViewHelpers/SlidingInLabel.php");

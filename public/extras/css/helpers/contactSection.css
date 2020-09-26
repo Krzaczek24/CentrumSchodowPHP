@@ -1,8 +1,13 @@
 .contact-section-main-container
 {
     width: 100%;
-    background-color: #eee;
-    padding-top: 84px;
+    /* background-color: #eee; */
+    /* padding-top: 84px; */
+}
+
+.contact-section-header
+{
+    margin-bottom: 64px;
 }
 
 .contact-section-centering-block
@@ -19,6 +24,7 @@
     border-left: 1px solid #ddd;
     width: 256px;
     float: left;
+    margin-bottom: 36px;
 }
 
 .contact-section-column .title
@@ -72,5 +78,4 @@
 .contact-section-map
 {
     width: 100%;
-    margin-top: 36px;
 }
