@@ -2,16 +2,12 @@
 
 <html>
     <head>
-        <title>Centrum Schodów - Tczew</title>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="/public/extras/images/icons/page-icon.png" sizes="32x32" />
-        <script src="/public/extras/js/jQuery/jquery-3.5.1.min.js"></script>
+        <?php require_once(__DIR__ . "/../../ViewHelpers/CommonHead.php"); ?>
         <?php require_once(__DIR__ . "/../../ViewHelpers/Logs.php") ?>
         <script>
             var filesOperationResults = $.parseJSON('<?php echo getFilesOperationResults() ?>');
         </script>
         <script src="/public/extras/js/logs.js"></script>
-        <link rel="stylesheet" href="/public/extras/css/common.css">
         <link rel="stylesheet" href="/public/extras/css/logs.css">
     </head>
     <body>

@@ -20,7 +20,11 @@
         <div class="contact-section-column">
             <h3 class="title">Formularz zapytaniowy</h3>
             <p>Jeśli potrzebujesz dokładnej wyceny swoich schodów, to tu znajdziesz formularz zapytaniowy.</p>
-            <input type="button" class="contact-section-form-button" value="NAPISZ DO NAS"/>
+            <div class="contact-section-form-button" onclick="window.location.href='/form'">
+                <div>
+                    <span>napisz do nas</span>
+                </div>
+            </div>
             <p></p>
         </div>
     </div>

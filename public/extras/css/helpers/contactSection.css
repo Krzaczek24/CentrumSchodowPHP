@@ -36,8 +36,38 @@
 
 .contact-section-form-button
 {
-    
+    cursor: pointer;
+    margin-top: 24px;
+    width: 180px;
+    border: solid 2px #c5c2c2;
+    border-radius: 4px;
+    transition: all .3s ease;
 }
+
+    .contact-section-form-button div
+    {
+        margin: auto auto;
+        width: fit-content;
+    }
+
+    .contact-section-form-button span
+    {
+        color:#7a7b80;
+        font-size: 11pt;
+        text-transform: uppercase;
+        line-height: 44px;
+    }
+
+.contact-section-form-button:hover
+{
+    background-color: #4b4e53;
+    border-color: #4b4e53;
+}
+
+    .contact-section-form-button:hover span
+    {
+        color: #fff;
+    }
 
 .contact-section-map
 {

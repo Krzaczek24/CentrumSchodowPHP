@@ -28,7 +28,9 @@
                     new SiteMapModel("schody zewnętrzne", "offer/outdoor"),
                     new SiteMapModel("balustrady i poręcze", "offer/balustrades")
                 ]),
-                new SiteMapModel("kontakt", "#contact")
+                new SiteMapModel("kontakt", "#contact", [
+                    new SiteMapModel("wyceń swoje schody", "form")
+                ])
             ]);
         ?>
     </div>
