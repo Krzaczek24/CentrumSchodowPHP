@@ -1,7 +1,14 @@
 <link rel="stylesheet" href="/public/extras/css/helpers/contactSection.css">
 
+<?php 
+    require_once(__DIR__ . "/NiceHeader.php");
+?>
+
 <div class="contact-section-main-container">
     <div class="contact-section-centering-block">
+        <div class="contact-section-header">
+            <?php renderNiceHeader("nasz kontakt") ?>
+        </div>
         <div class="contact-section-column">
             <h3 class="title">Rokitki</h3>
             <p>ul. Piękna 123</p>
@@ -20,7 +27,11 @@
         <div class="contact-section-column">
             <h3 class="title">Formularz zapytaniowy</h3>
             <p>Jeśli potrzebujesz dokładnej wyceny swoich schodów, to tu znajdziesz formularz zapytaniowy.</p>
-            <input type="button" class="contact-section-form-button" value="NAPISZ DO NAS"/>
+            <div class="contact-section-form-button" onclick="window.location.href='/form'">
+                <div>
+                    <span>napisz do nas</span>
+                </div>
+            </div>
             <p></p>
         </div>
     </div>
