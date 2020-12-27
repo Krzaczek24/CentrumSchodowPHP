@@ -4,7 +4,6 @@
 <?php
 
 use CS\Models\Frontend\SlideInLabel\LabelModel as SlideInLabelModel;
-use CS\Models\Frontend\TileWithMultiText\LabelModel;
 use CS\Models\GalleryElementModel;
 
 require_once(__DIR__ . "/SlidingInLabel.php");
@@ -13,7 +12,7 @@ require_once(__DIR__ . "/SlidingInLabel.php");
  * Renders side by side gallery for given array of gallery elements
  * @param GalleryElementModel[] $galleryElements list of objects with path, header and description
  */
-function renderSideBySideGallery($galleryElements)
+function renderSideBySideGallery($galleryElements, $upperCasedDescription = false)
 {
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;
@@ -23,7 +22,7 @@ function renderSideBySideGallery($galleryElements)
 
     $table = $dom->createElement('table');
 
-    $oddRow = true;
+    $even = false;
 
     foreach ($galleryElements as $galleryElement)
     {
@@ -37,49 +36,26 @@ function renderSideBySideGallery($galleryElements)
         $imageContainer->appendChild($image);
         $imageCell->appendChild($imageContainer);
 
+        $texts = explode(' ', $galleryElement->getTitle(), 2);
         $textCell = $dom->createElement('td');
-        $textCell2 = $dom->createElement('td');
-
         $textContainer = $dom->createElement('div');
         $textContainer->setAttribute('class', 'side-by-side-gallery-text-container');
-
-        $textContainer2 = $dom->createElement('div');
-        $textContainer2->setAttribute('class', 'side-by-side-gallery-text-container');
-
-        $temp = $dom->createElement('div');
-        $temp->setAttribute('class', 'slide-in-label-main-container');
-
-        $texts = explode(' ', $galleryElement->getTitle(), 2);
-
-        /* ##################### */
-        $slideInLabel = new SlideInLabelModel();
+        $slideInLabel = new SlideInLabelModel($even);
         $slideInLabel->addLine($texts[0]);
         $slideInLabel->addLine("", $texts[1]);
-        $slideInLabel->setDescription($galleryElement->getDescription());
-        //echo $slideInLabel->getHTMLedLabel();
-        $temp->appendChild($slideInLabel->getDomElement($dom));
-        $textContainer2->appendChild($temp);
-        $textCell2->appendChild($textContainer2);
-        /* ##################### */
-
-        
-        $textLabel = new LabelModel();
-        $textLabel->addLine($texts[0]);
-        $textLabel->addLine("", $texts[1]);
-        $desciption = $dom->createElement('span', $galleryElement->getDescription());
-        $textContainer->appendChild($textLabel->getDomElement($dom));
-        $textContainer->appendChild($desciption);
+        $slideInLabel->setDescription($galleryElement->getDescription(), $upperCasedDescription);
+        $textContainer->appendChild($slideInLabel->getDomElement($dom));
         $textCell->appendChild($textContainer);
 
-        if ($oddRow = !$oddRow)
-        {
-            $row->appendChild($imageCell);
-            $row->appendChild($textCell2);
-        }
-        else
+        if ($even = !$even) // even
         {
             $row->appendChild($textCell);
             $row->appendChild($imageCell);
+        }
+        else // odd
+        {
+            $row->appendChild($imageCell);
+            $row->appendChild($textCell);
         }
 
         $table->appendChild($row);

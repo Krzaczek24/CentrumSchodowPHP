@@ -16,10 +16,7 @@ var animateSlidingInLabel = function(interval = 250, duration = 1000) {
             var lines = $(this).children();
             $.each(lines, function(idx, elem) {
                 setTimeout(() => {
-                    $(elem).animate(getParameters(parent)/*{
-                        transform: 'translateX(0)',
-                        marginLeft: '25%'
-                    }*/, duration) 
+                    $(elem).animate(getParameters(parent), duration) 
                 }, interval * idx)
             });
         }

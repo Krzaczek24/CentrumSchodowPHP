@@ -33,11 +33,11 @@
                 require(__DIR__ . "/../../ViewHelpers/AutoGallery.php");
                 
                 renderAutoGallery([
-                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo1.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo2.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo3.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo4.jpg', null, null),
-                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo5.jpg', null, null)
+                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo1.jpg'),
+                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo2.jpg'),
+                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo3.jpg'),
+                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo4.jpg'),
+                    new GalleryElementModel('/public/extras/images/gallery/main/auto/photo5.jpg')
                 ]);
             ?>
         </div>
@@ -70,9 +70,9 @@
         <div class="full-width page-section">
             <?php
                 renderSideBySideGallery([
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/wzornictwo.jpg',           "Niepowtarzalne wzornictwo",    "Dzięki naszemu parkowi maszynowemu możemy zaproponować nieszablonowe rozwiązania."),
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/szkło_i_metal.jpg',        "Szkło i metal",                "…to udany przepis na nowoczesne schody."),
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/klasyczne_drewniane.jpg',  "Klasycznie drewniane",         "Schody klasyczne drewniane to rozwiązanie dla miłośników natury i klasyki")
+                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/wzornictwo.jpg',           "Niepowtarzalne wzornictwo",    ["Dzięki naszemu parkowi maszynowemu możemy zaproponować nieszablonowe rozwiązania."]),
+                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/szkło_i_metal.jpg',        "Szkło i metal",                ["…to udany przepis na nowoczesne schody."]),
+                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/klasyczne_drewniane.jpg',  "Klasycznie drewniane",         ["Schody klasyczne drewniane to rozwiązanie dla miłośników natury i klasyki"])
                 ]);
             ?>
         </div>

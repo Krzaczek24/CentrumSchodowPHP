@@ -2,19 +2,21 @@
 
 namespace CS\Models\Frontend\SlideInLabel;
 
+use DOMDocument;
+
 /**
  * Contains sliding in label lines sentences and generates ready HTML node
  */
 class LabelLineModel
 {
-    private $normal;
-    private $bold;
+    private string $normal;
+    private string $bold;
 
     /**
      * @param String $normal text which will be shown without bold
      * @param String $bold text which will be bolded
      */
-    public function __construct($normal = "", $bold = "")
+    public function __construct(string $normal = "", string $bold = "")
     {
         $this->normal = $normal;
         $this->bold = $bold;
@@ -23,7 +25,7 @@ class LabelLineModel
     /**
      * @param String $sentence
      */
-    public function setNormalSentence($sentence)
+    public function setNormalSentence(string $sentence)
     {
         $this->normal = $sentence;
     }
@@ -31,15 +33,16 @@ class LabelLineModel
     /**
      * @param String $sentence
      */
-    public function setBoldSentence($sentence)
+    public function setBoldSentence(string $sentence)
     {
         $this->bold = $sentence;
     }
 
     /**
-     * @return DOMElement ready HTML node for SlideInLabel
+     * @param DOMDocument $dom
+     * @return \DOMElement ready HTML node for SlideInLabel
      */
-    public function getHTMLedLabelLine($dom)
+    public function getHTMLedLabelLine(DOMDocument $dom)
     {
         $normal = $dom->createElement('span', $this->normal);
         $normal->setAttribute('class', 'slide-in-label-normal');
@@ -48,7 +51,7 @@ class LabelLineModel
         $bold->setAttribute('class', 'slide-in-label-bold');
 
         $line = $dom->createElement('div');
-        $line->setAttribute('class', 'slide-in-label-line');
+        $line->setAttribute('class', 'slide-in-label-header-line');
         $line->appendChild($normal);
         $line->appendChild($bold);
 

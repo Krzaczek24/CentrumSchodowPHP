@@ -1,15 +1,17 @@
 .slide-in-label-main-container
 {
     width: 100%;
-    text-transform: uppercase;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    padding-top: 12px;
 }
 
-.slide-in-label-line
+.slide-in-label-header-line
 {
+    text-transform: uppercase;
     width: fit-content;
     font-size: 48px;
     white-space: nowrap;
+    margin-top: -12px;
 }
 
 .slide-in-label-bold
@@ -17,8 +19,22 @@
     font-weight: bold;
 }
 
-.slide-in-label-line,
-.slide-in-label-underline
+.slide-in-label-left
 {
-    transform: translateX(-1000px);
+    transform: translateX(-100vw);
+}
+
+.slide-in-label-right
+{
+    transform: translateX(+200vw);
+}
+
+.slide-in-label-description-uppercase
+{
+    text-transform: uppercase;
+}
+
+.slide-in-label-description-line:first-of-type
+{
+    padding-top: 12px;
 }
