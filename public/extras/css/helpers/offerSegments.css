@@ -1,0 +1,22 @@
+.offer-segments-main-container
+{
+    width: 100%;
+}
+
+.offer-segments-centering-block
+{
+    width: 1280px;
+    margin: auto;
+    text-align: justify;
+}
+
+.offer-segments-header
+{
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.offer-segments-paragraph
+{
+    font-size: inherit;
+}

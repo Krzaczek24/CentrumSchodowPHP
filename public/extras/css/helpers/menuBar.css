@@ -48,6 +48,7 @@
     position: relative;
     margin-left: 10px;
     transition: height 0.3s ease-out;
+    cursor: pointer;
 }
 
 .main-menu-bar-logo img

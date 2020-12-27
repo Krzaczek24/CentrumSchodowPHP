@@ -12,15 +12,34 @@ var animateSlidingInLabel = function(interval = 250, duration = 1000) {
         {
             $(this).data('shown', true);
 
+            var parent = $(this).parent();
             var lines = $(this).children();
             $.each(lines, function(idx, elem) {
                 setTimeout(() => {
-                    $(elem).animate({
+                    $(elem).animate(getParameters(parent)/*{
                         transform: 'translateX(0)',
                         marginLeft: '25%'
-                    }, duration) 
+                    }*/, duration) 
                 }, interval * idx)
             });
         }
     });
 };
+
+var getParameters = function(node)
+{
+    if ($(node).attr('class').startsWith('side-by-side-gallery'))
+    {
+        return {
+            transform: 'translateX(0)',
+            marginLeft: '0px'
+        };
+    }
+    else
+    {
+        return {
+            transform: 'translateX(0)',
+            marginLeft: '25%'
+        }
+    }
+}

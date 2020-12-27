@@ -15,6 +15,7 @@ function scrollToElement(targetElement, offset = 0, animationTime = CSG.DefaultA
         targetElementPosition += offset;
     }
 
+    $([document.documentElement, document.body]).stop();
     $([document.documentElement, document.body]).animate({
         scrollTop: targetElementPosition
     }, animationTime);

@@ -67,8 +67,8 @@ class Logger
         {
             $line = sprintf("\t#%d at %s(%d): %s%s%s", 
                 $key, 
-                $value["file"], 
-                $value["line"], 
+                isset($value["file"]) ? $value["file"] : "", 
+                isset($value["line"]) ? $value["line"] : "", 
                 isset($value["class"]) ? $value["class"] : "", 
                 isset($value["type"]) ? $value["type"] : "", 
                 isset($value["function"]) ? $value["function"] : "", 

@@ -2,7 +2,7 @@
 
 namespace CS\Core;
 
-use Exception;
+use CS\Helpers\Logger;
 
 /**
  * Translates received URL into controller, controllers method and parameters fot that method.
@@ -58,29 +58,15 @@ class Router
      */
     private static function setController(&$url)
     {
-        $found = true;
+        $found = false;
 
         if (isset($url[0]) && !empty($url[0]))
         {
             $controller = ucfirst(strtolower($url[0])) . "Controller";
 
-            if (file_exists("../app/Controllers/$controller.php"))
+            if ($found = file_exists("../app/Controllers/$controller.php"))
             {
                 self::$controller = $controller;
-            }
-            else
-            {
-                self::$controller = "ErrorController";
-                self::$params = 
-                [
-                    "code" => 404,
-                    "parameters" => 
-                    [ 
-                        "url" => "/" . $_GET["url"]
-                    ]
-                ];
-                
-                $found = false;
             }
 
             unset($url[0]);
@@ -107,7 +93,7 @@ class Router
             else
             {
                 $message = sprintf("No such method [%s] in [%s] controller!", $url[1], get_class(self::$controller));
-                throw new Exception($message);
+                Logger::writeLog($message);                
             }
 
             unset($url[1]);

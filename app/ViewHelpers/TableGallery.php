@@ -30,7 +30,14 @@ function renderTableGallery($galleryElements, $columnsNumber = null)
             $imgNo = $row * $maxColumns + $column;
             if (isset($galleryElements[$imgNo]))
             {
-                $td->setAttribute('onclick', 'window.location.href=\'' . $galleryElements[$imgNo]->getUrl() . '\'');
+                if ($galleryElements[$imgNo]->getUrl() !== null)
+                {
+                    $td->setAttribute('onclick', "window.location.href='http://" . $_SERVER['HTTP_HOST'] . "/" . $galleryElements[$imgNo]->getUrl() . "'");
+                }
+                else
+                {
+                    $td->setAttribute('class', $td->getAttribute('class') . " ". "no-pointer");
+                }
 
                 $text = $dom->createElement('span', $galleryElements[$imgNo]->getTitle());
 
