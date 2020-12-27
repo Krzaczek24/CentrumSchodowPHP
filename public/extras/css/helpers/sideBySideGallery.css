@@ -1,6 +1,7 @@
 .side-by-side-gallery-main-container
 {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .side-by-side-gallery-main-container table
@@ -8,11 +9,6 @@
     width: 100%;
     border-spacing: 0px;
 }
-
-/* .side-by-side-gallery-main-container table tr
-{
-    width: 100%;
-} */
 
 .side-by-side-gallery-main-container table tr td
 {
@@ -44,12 +40,6 @@
 .side-by-side-gallery-text-container span
 {
     text-overflow: clip;   
-}
-
-
-.side-by-side-gallery-text-container .slide-in-label-line
-{
-    margin-top: -12px;
 }
 
 /* no właśnie - to będzie do wywalenie po refactoringu */

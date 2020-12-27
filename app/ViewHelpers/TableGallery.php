@@ -24,12 +24,13 @@ function renderTableGallery($galleryElements, $columnsNumber = null)
         $tr = $dom->createElement('tr');
         for ($column = 0; $column < $maxColumns; $column++)
         {
-            $td = $dom->createElement('td');
-            $td->setAttribute('class', 'tile-gallery-cell');
-
             $imgNo = $row * $maxColumns + $column;
+
             if (isset($galleryElements[$imgNo]))
             {
+                $td = $dom->createElement('td');
+                $td->setAttribute('class', 'tile-gallery-cell');
+
                 if ($galleryElements[$imgNo]->getUrl() !== null)
                 {
                     $td->setAttribute('onclick', "window.location.href='http://" . $_SERVER['HTTP_HOST'] . "/" . $galleryElements[$imgNo]->getUrl() . "'");
@@ -55,9 +56,9 @@ function renderTableGallery($galleryElements, $columnsNumber = null)
                 $imageContainer->appendChild($image);
 
                 $td->appendChild($imageContainer);
-            }
 
-            $tr->appendChild($td);
+                $tr->appendChild($td);
+            }
         }
         $main->appendChild($tr);
     }

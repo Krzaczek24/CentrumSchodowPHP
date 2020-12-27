@@ -2,21 +2,23 @@
 
 namespace CS\Models\Frontend\Gallery;
 
+use CS\Models\Frontend\SlideInLabel\LabelModel;
+
 class GalleryElementModel
 {
-    private $imagePath;
-    private $title;
-    private $description;
-    private $url;
+    private string $imagePath;
+    private ?string $title;
+    private ?LabelModel $description;
+    private ?string $url;
 
     /**
-     * Comment here
+     * That's just a model for gallery elements
      * @param string $imagePath
      * @param string $title
-     * @param string $description
+     * @param LabelModel $description
      * @param string $url
      */
-    public function __construct($imagePath, $title = null, $description = null, $url = null)
+    public function __construct(string $imagePath, ?string $title = null, ?LabelModel $description = null, ?string $url = null)
     {
         $this->imagePath = $imagePath;
         $this->title = $title;
