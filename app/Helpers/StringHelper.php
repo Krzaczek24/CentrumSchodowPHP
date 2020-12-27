@@ -34,4 +34,14 @@ class StringHelper
         } 
         return (substr($string, -$len) === $endString); 
     }
+
+    /**
+     * Checks if text is not null or empty
+     * @param string $string text to check
+     * @return bool true if string has at least one character, otherwise returns false
+     */
+    public static function isNullOrEmpty($string)
+    {
+        return $string === NULL || strlen($string) == 0;
+    }
 }

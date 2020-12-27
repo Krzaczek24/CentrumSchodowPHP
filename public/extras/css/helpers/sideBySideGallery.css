@@ -46,9 +46,16 @@
     text-overflow: clip;   
 }
 
+
+.side-by-side-gallery-text-container .slide-in-label-line
+{
+    margin-top: -12px;
+}
+
 /* no właśnie - to będzie do wywalenie po refactoringu */
 
-.side-by-side-gallery-text-container .tile-with-multi-text-title-container
+.side-by-side-gallery-text-container .tile-with-multi-text-title-container,
+.side-by-side-gallery-text-container .slide-in-label-line
 {
     font-size: 42px;
 }

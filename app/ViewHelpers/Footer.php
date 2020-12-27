@@ -28,7 +28,6 @@
                         new SiteMapModel("Schody półkowe", "offer/shelf"),
                         new SiteMapModel("Schody drewniane", "offer/wood"),
                         new SiteMapModel("Małe schody", "offer/small"),
-                        new SiteMapModel("Schody zewnętrzne", "offer/outdoor"),
                         new SiteMapModel("Balustrady i poręcze", "offer/balustrades")
                     ]);
                 ?>
@@ -64,9 +63,9 @@ function renderOfferLinks($siteMap)
     foreach ($siteMap as $siteAddress)
     {
         $p = $dom->createElement('p');
-
+        
         $a = $dom->createElement('span', $siteAddress->getDisplayName());
-        $a->setAttribute('onClick', "window.location.href='" . $siteAddress->getAddress() . "'");
+        $a->setAttribute('onClick', "window.location.href='http://" . $_SERVER['HTTP_HOST'] . "/" . $siteAddress->getAddress() . "'");
 
         $p->appendChild($a);
 

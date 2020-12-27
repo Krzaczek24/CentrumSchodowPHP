@@ -2,6 +2,7 @@
 
 namespace CS\Models\Frontend\SlideInLabel;
 
+use CS\Helpers\StringHelper;
 use DOMDocument;
 
 /**
@@ -10,6 +11,7 @@ use DOMDocument;
 class LabelModel
 {
     private $lines;
+    private $description;
 
     public function __construct()
     {
@@ -31,6 +33,14 @@ class LabelModel
     public function addLine($normal = "", $bold = "")
     {
         array_push($this->lines, new LabelLineModel($normal, $bold));
+    }
+
+    /**
+     * @param String $text text which will be shown below line
+     */
+    public function setDescription($text)
+    {
+        $this->description = $text;
     }
 
     /**
@@ -58,5 +68,34 @@ class LabelModel
         $dom->appendChild($main);
 
         return $dom->saveHTML();
+    }
+
+    /**
+     * @param DOMDocument $dom
+     * @return \DOMNode
+     */
+    public function getDomElement($dom)
+    {
+        $main = $dom->createElement('div');
+        $main->setAttribute('class', 'slide-in-label-main-container');
+        $main->setAttribute('data-shown', 'false');
+
+        foreach ($this->lines as $line)
+        {
+            $main->appendChild($line->getHTMLedLabelLine($dom));
+        }
+
+        $underline = $dom->createElement('div');
+        $underline->setAttribute('class', 'underline slide-in-label-underline');
+
+        $main->appendChild($underline);
+
+        if (!StringHelper::isNullOrEmpty($this->description))
+        {
+            $span = $dom->createElement('span', $this->description);
+            $main->appendChild($span);
+        }
+
+        return $main;
     }
 }

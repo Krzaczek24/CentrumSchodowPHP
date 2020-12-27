@@ -7,12 +7,10 @@
 
 <div class="sticky-top-container top">
     <div class="main-menu-bar">
-        <a href="..">
-            <div class="main-menu-bar-logo" alt="Centrum Schodów">
-                <img id="logo-black" src="/public/extras/images/logo/logo-black.png">
-                <img id="logo-white" src="/public/extras/images/logo/logo-white.png" class="hidden">
-            </div>
-        </a>
+        <div class="main-menu-bar-logo" alt="Centrum Schodów" onclick="document.location.href='/';">
+            <img id="logo-black" src="/public/extras/images/logo/logo-black.png">
+            <img id="logo-white" src="/public/extras/images/logo/logo-white.png" class="hidden">
+        </div>
         <?php 
             drawMainMenuTable([
                 new SiteMapModel("strona główna", "home"),
@@ -25,7 +23,6 @@
                     new SiteMapModel("schody półkowe", "offer/shelf"),
                     new SiteMapModel("schody drewniane", "offer/wood"),
                     new SiteMapModel("małe schody", "offer/small"),
-                    new SiteMapModel("schody zewnętrzne", "offer/outdoor"),
                     new SiteMapModel("balustrady i poręcze", "offer/balustrades")
                 ]),
                 new SiteMapModel("kontakt", "#contact", [
