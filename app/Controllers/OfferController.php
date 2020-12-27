@@ -28,7 +28,6 @@ class OfferController extends Controller
             new GalleryElementModel("/public/extras/images/gallery/offer/stairs-types/shelf.jpg",         "schody półkowe",           null, "offer/shelf"),
             new GalleryElementModel("/public/extras/images/gallery/offer/stairs-types/wood.jpg",          "schody drewniane",         null, "offer/wood"),
             new GalleryElementModel("/public/extras/images/gallery/offer/stairs-types/small.jpg",         "małe schody",              null, "offer/small"),
-            new GalleryElementModel("/public/extras/images/gallery/offer/stairs-types/outdoor.jpg",       "schody zewnętrzne",        null, "offer/outdoor"),
             new GalleryElementModel("/public/extras/images/gallery/offer/stairs-types/balustrades.jpg",   "balustrady i poręcze",     null, "offer/balustrades")
         ]);
 
