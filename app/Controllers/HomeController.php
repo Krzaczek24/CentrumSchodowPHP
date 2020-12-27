@@ -4,7 +4,6 @@ namespace CS\Controllers;
 
 use CS\Core\Controller;
 use CS\Models\Database\TestDbModel;
-use Exception;
 
 /**
  * Home page controller

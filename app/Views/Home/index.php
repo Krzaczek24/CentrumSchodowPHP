@@ -3,6 +3,7 @@
 <?php 
     use CS\Models\Frontend\Gallery\GalleryElementModel;
     use CS\Models\Frontend\SlideInLabel\LabelModel as SlideInLabelModel;
+    use CS\Models\Frontend\SlideInLabel\LabelLineModel as SlideInLabelLineModel;
     use CS\Models\Frontend\TileWithMultiText\LabelModel as TileWithMultiTextLabelModel;
     use CS\Models\Frontend\TileWithMultiText\SubTileModel;
     use CS\Models\Frontend\TileWithMultiText\TileModel;
@@ -70,9 +71,39 @@
         <div class="full-width page-section">
             <?php
                 renderSideBySideGallery([
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/wzornictwo.jpg',           "Niepowtarzalne wzornictwo",    ["Dzięki naszemu parkowi maszynowemu możemy zaproponować nieszablonowe rozwiązania."]),
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/szkło_i_metal.jpg',        "Szkło i metal",                ["…to udany przepis na nowoczesne schody."]),
-                    new GalleryElementModel('/public/extras/images/gallery/main/side_by_side/klasyczne_drewniane.jpg',  "Klasycznie drewniane",         ["Schody klasyczne drewniane to rozwiązanie dla miłośników natury i klasyki"])
+                    new GalleryElementModel(
+                        '/public/extras/images/gallery/main/side_by_side/wzornictwo.jpg', 
+                        null,
+                        new SlideInLabelModel(
+                            [
+                                new SlideInLabelLineModel("niepowtarzalne"),
+                                new SlideInLabelLineModel("", "wzornictwo")
+                            ],
+                            ["Dzięki naszemu parkowi maszynowemu możemy zaproponować nieszablonowe rozwiązania."]
+                        )
+                    ),
+                    new GalleryElementModel(
+                        '/public/extras/images/gallery/main/side_by_side/szkło_i_metal.jpg',
+                        null,
+                        new SlideInLabelModel(
+                            [
+                                new SlideInLabelLineModel("szkło"),
+                                new SlideInLabelLineModel("", "i metal")
+                            ],
+                            ["…to udany przepis na nowoczesne schody."]
+                        )
+                    ),
+                    new GalleryElementModel(
+                        '/public/extras/images/gallery/main/side_by_side/klasyczne_drewniane.jpg',
+                        null,
+                        new SlideInLabelModel(
+                            [
+                                new SlideInLabelLineModel("klasycznie"),
+                                new SlideInLabelLineModel("", "drewniane")
+                            ],
+                            ["Schody klasyczne drewniane to rozwiązanie dla miłośników natury i klasyki"]
+                        )
+                    )
                 ]);
             ?>
         </div>

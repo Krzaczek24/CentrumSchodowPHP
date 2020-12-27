@@ -11,8 +11,10 @@ require_once(__DIR__ . "/SlidingInLabel.php");
 /**
  * Renders side by side gallery for given array of gallery elements
  * @param GalleryElementModel[] $galleryElements list of objects with path, header and description
+ * @param bool $upperCasedDescription should description to be uppercased
+ * @param bool $invert gallery starts with image at left side instead of right
  */
-function renderSideBySideGallery($galleryElements, $upperCasedDescription = false)
+function renderSideBySideGallery(array $galleryElements, bool $upperCasedDescription = false, bool $invert = false)
 {
     $dom = new DOMDocument('1.0', 'UTF-8');
     $dom->formatOutput = true;
@@ -22,7 +24,7 @@ function renderSideBySideGallery($galleryElements, $upperCasedDescription = fals
 
     $table = $dom->createElement('table');
 
-    $even = false;
+    $even = $invert;
 
     foreach ($galleryElements as $galleryElement)
     {
@@ -36,14 +38,19 @@ function renderSideBySideGallery($galleryElements, $upperCasedDescription = fals
         $imageContainer->appendChild($image);
         $imageCell->appendChild($imageContainer);
 
-        $texts = explode(' ', $galleryElement->getTitle(), 2);
         $textCell = $dom->createElement('td');
         $textContainer = $dom->createElement('div');
         $textContainer->setAttribute('class', 'side-by-side-gallery-text-container');
-        $slideInLabel = new SlideInLabelModel($even);
-        $slideInLabel->addLine($texts[0]);
-        $slideInLabel->addLine("", $texts[1]);
-        $slideInLabel->setDescription($galleryElement->getDescription(), $upperCasedDescription);
+        $slideInLabel = new SlideInLabelModel();
+        if ($galleryElement->getDescription() !== null)
+        {
+            foreach ($galleryElement->getDescription()->getHeaderLines() as $descriptionHeaderLine)
+            {
+                $slideInLabel->addReadyLine($descriptionHeaderLine);
+            }
+            $slideInLabel->setDescription($galleryElement->getDescription()->getDescriptionLines(), $upperCasedDescription);
+        }
+        $slideInLabel->setSlideInFromRight($even);
         $textContainer->appendChild($slideInLabel->getDomElement($dom));
         $textCell->appendChild($textContainer);
 
