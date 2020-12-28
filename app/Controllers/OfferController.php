@@ -311,7 +311,7 @@ class OfferController extends Controller
 
         foreach ($names as $name)
         {
-            array_push($model->tiles, new GalleryElementModel("/public/extras/images/gallery/offer/wood/$name.jpg", "schody drewniane $name", null, "offer/wood/$name"));
+            $model->addGalleryElement(new GalleryElementModel("/public/extras/images/gallery/offer/wood/$name.jpg", "schody drewniane $name", null, "offer/wood/$name"));
         }
 
         $this->view("Offer/index", $model, []);
@@ -345,7 +345,7 @@ class OfferController extends Controller
 
         foreach ($names as $name)
         {
-            array_push($model->tiles, new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$name.jpg", "schody $name", null, "offer/woodsteel/$name"));
+            $model->addGalleryElement(new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$name.jpg", "schody $name", null, "offer/woodsteel/$name"));
         }
 
         $this->view("Offer/index", $model, []);
