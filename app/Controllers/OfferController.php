@@ -308,176 +308,202 @@ class OfferController extends Controller
 
                 case "ola":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Ola", [
+                            "Jeśli poszukujesz rozwiązania do swojego domu, które wyróżni się designem i będzie czymś, co odmieni całkowicie każde wnętrze, to powinieneś zastanowić się nad schodami spiralnymi. Jest to nic innego, jak schody na planie koła, stąd też ich często występujące określenie jako schody okrągłe. Oprócz planu, na jakim się je buduje, a raczej w wyniku tego planu, każdy ze schodków wyróżnia się innym kształtem – wśród schodów znajdziesz trapezy, prostokąty, a nawet trójkąty.",
+                            "Jeśli zainteresowaliśmy Cię tematem, to poznaj nowoczesne schody spiralne Ola. To pomysł wyróżniający się nietuzinkowym wyglądem, który sprawdzi się w każdym wnętrzu, gdzie praktyka idzie w parze z unikatowym designem. Nie oznacza to jednak, że Ola nie będzie prezentować się dobrze w pomieszczeniach klasycznych, prostych."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Wysokiej jakości drewno", [
+                            "Tym, co sprawia, że schody spiralne Ola są doskonałe dla różnego rodzaju wnętrz, jest m.in. wysokiej jakości drewno, które stosujemy na stopniach. Dostępne są stopnie wykonane z drewna dębowego lub bukowego. To materiał ponadczasowy i elegancki, sprawiający, że nawet mimo nowoczesnego designu samych schodów, będą one dobrze prezentowały się we wnętrzach klasycznych. Perfekcyjne wykonanie i dbałość o każdy, nawet najdrobniejszy szczegół, powodują, że drewno takie wygląda zawsze pięknie i stylowo."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Bezpieczeństwo i elegancja", [
+                            "Estetyka powinna iść w parze z kwestiami bezpieczeństwa. Wchodzenie po schodkach o tak różnorodnym kształcie może nie być przecież początkowo łatwe dla małego dziecka, czy osoby starszej. Wsparcie zapewni będąca częścią schodów spiralnych Ola balustrada. Jest ona wyjątkowo solidna za sprawą metalowego wykonania, lecz elegancko wykończona drewnianym, giętym pochwytem. Całość daje masywny, ale też bardzo klasowy, subtelny efekt."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Solidna konstrukcja", [
+                            "Mówiąc o solidności i bezpieczeństwie, nie można nie wspomnieć o samej konstrukcji schodów spiralnych Ola. Składa się ona ze słupa centralnego i dystansów między stopniami lub drewnianych tulei. Jej doskonałe wykonanie zapewnia możliwość korzystania ze schodów przez długie lata, bez utraty walorów praktycznych ani estetycznych."
+                        ]),
+                        new OfferDetailsSegmentModel("Kiedy wybrać?", [
+                            "Schody spiralne Ola to korzystna opcja nie tylko dla dużych, ale też mniejszych przestrzeni. Zajmują niewielką powierzchnię, a swoją prezencją, niemal wisząc w powietrzu, sprawiają wrażenie zwiększania przestrzenności danego wnętrza. Pomieszczenie z takim rodzajem schodów wydaje się lekkie i dynamiczne, co jest przewagą nad tradycyjnymi schodami, które, nieodpowiednio dobrane, mogą wydawać się topornymi i ograniczającymi przestrzeń."
+                        ]),
+                        new OfferDetailsSegmentModel("Centrum Schodów", [
+                            "Zobacz wykonywane przez nas schody i poznaj nas lepiej. Zobacz na własne oczy, dlaczego warto zdecydować się na nowoczesne schody spiralne Ola. Zapewniamy najlepszą jakość wykonania oraz najwyższy poziom obsługi. Poznaj nasze 3 dostępne opcje tego rodzaju schodów – zobacz najlepsze projekty naszych specjalistów. Uatrakcyjnij każde wnętrze, dodając do niego funkcjonalność oraz ponadczasową estetykę w postaci nowoczesnych, lecz odpowiednich również do klasycznych wnętrz schodów spiralnych Ola."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/ola/1/1.jpg", null, new LabelModel([new LabelLineModel("ola ", "1")], ["konstrukcja nośna ze słupa centralnego i dystansów między stopniami", "stopnie bukowe", "balustrada metalowa z drewnianym giętym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/ola/2/1.jpg", null, new LabelModel([new LabelLineModel("ola ", "2")], ["konstrukcja nośna ze słupa centralnego z drewnianymi tulejami", "stopnie dębowe", "balustrada metalowa z drewnianym giętym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/ola/3/1.jpg", null, new LabelModel([new LabelLineModel("ola ", "3")], ["konstrukcja nośna ze słupa centralnego i dystansów między stopniami", "stopnie bukowe", "balustrada metalowa z drewnianym giętym pochwytem"]))
                     ]);
                     
                     break;
 
                 case "sandra":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Czym są schody spiralne?", [
+                            "Schody spiralne to opcja dla wszystkich tych, którzy cenią w swoich wnętrzach rozwiązania eleganckie, lecz nietypowe, przełamujące schematy i gwarantujące, że aranżacja pomieszczenia nigdy nie będzie nudna. Schody spiralne nazywane są bowiem schodami kręconymi ze względu na to, że budowane są na planie koła. Stopnie zakręcają, tworząc wyjątkowy efekt. Wśród zalet takiego typu schodów podkreśla się, że wyglądają one tak, jakby częściowo wisiały w powietrzu bez żadnego oparcia."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Kręcone schody Sandra", [
+                            "Jednym z modeli schodów, które oferujemy naszym klientom, jest model Sandra. Polecamy je zarówno, gdy poszukujesz uzupełnienia nowoczesnego wnętrza o unikalnym designie, jak też wówczas, gdy interesuje Cię klasyczny, lecz niebanalny, elegancki wystrój pomieszczenia. Jest to możliwe za sprawą unikalnego połączenia konstrukcji metalowych oraz drewna, które chcemy Ci zaproponować."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Unikatowy styl", [
+                            "Możemy zaproponować jedno z dwóch wykonań schodów Spiralnych Sandra. W obydwu stopnie tworzone są z drewna bukowego, a balustrada z giętym drewnianym pochwytem może być, do wyboru: metalowa lub ze stali nierdzewnej. Kreatywne połączenie wykonanej metodą laserową balustrady oraz wymienionych materiałów sprawia, że nie sposób przejść wobec schodów Sandra obojętnie. Pomimo stosunkowo prostego designu przykuwają wzrok i gustownie wieńczą każde wnętrze."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Wysokie standardy bezpieczeństwa", [
+                            "Bezpieczeństwo i stabilność całej konstrukcji kręconych schodów Sandra zapewniamy poprzez konstrukcję nośną ze słupa centralnego z dystansami między stopniami. O bezpieczeństwo korzystających ze schodów zadba natomiast stabilna balustrada, która zabezpieczy Cię przed spadkiem ze schodów przy przypadkowym potknięciu się, poślizgnięciu lub zachwianiu równowagi. To ponadto doskonałe zabezpieczenie w przypadku, gdy ze schodów korzystać mają dzieci lub osoby starsze."
+                        ]),
+                        new OfferDetailsSegmentModel("Uniwersalny wybór", [
+                            "Po kręcone schody Sandra może sięgnąć zarówno miłośnik nowoczesnego budownictwa, ceniącego nietypowe elementy, jak też osoba ceniąca proste wnętrza. Pierwsza z nich na pewno doceni kreatywną konstrukcję schodów i efekt, jaki daje ich wykonanie na planie koła. Druga natomiast – zachwyci się wysokiej jakości bukowym drewnem, pasującym nawet do surowego, skandynawskiego stylu wystroju wnętrz. Zastosowanie we wnętrzu schodów spiralnych Sandra pozwoli optycznie powiększyć pomieszczenie, nadać mu lekkości, a także przełamać zbytnią statyczność i nudę. Nie odbiera to jednak niczego z solidności i stabilności całej konstrukcji schodów."
+                        ]),
+                        new OfferDetailsSegmentModel("Wysokiej jakości stylowe schody", [
+                            "Zobacz wykonywane przez nas projekty i zaufaj naszym specjalistom. Nie boimy się łączyć tego, co nieoczywiste, aby stworzyć dla Ciebie coś wyjątkowego. Proponujemy rozwiązania proste, lecz zarazem kreatywne, mające na celu uzyskanie doskonałej harmonii z każdym pięknym, stylowym wnętrzem. Tworzymy w ten sposób niebanalne połączenie tego, co klasyczne z tym, co nowe, nieznane, nietypowe. Zaufaj naszym doświadczonym i kreatywnym specjalistom, aby móc cieszyć się rozwiązaniami takimi, jak schody spiralne Sandra w swojej domowej przestrzeni."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/sandra/1/1.jpg", null, new LabelModel([new LabelLineModel("sandra ", "1")], ["konstrukcja nośna ze słupa centralnego oraz dystansów między stopniami", "stopnie bukowe", "balustrada ze stali nierdzewnej z giętym drewnianym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/sandra/2/1.jpg", null, new LabelModel([new LabelLineModel("sandra ", "2")], ["konstrukcja nośna ze słupa centralnego oraz dystansów między stopniami", "stopnie bukowe", "balustrada metalowa z giętym drewnianym pochwytem"]))
                     ]);
                 
                     break;
 
                 case "sylwia":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Połączenie estetyki z wygodą", [
+                            "Nie ulega wątpliwości, że podczas wyboru schodów do wnętrza, kierujesz się głównie kwestiami praktycznymi. Schody mają przede wszystkim dobrze Ci służyć. Pozostaję one jednak częścią aranżacji i kompozycji danego pomieszczenia, więc zależy Ci również na tym, aby efektownie wyglądały. Tradycyjne schody często tracą ten element elegancji i pomysłowości, stając się po prostu kolejnym koniecznym elementem danego pomieszczenia. Traktowanie konieczności zamontowania schodów w ten sposób to jednak duży błąd, ponieważ tracisz wiele z tego, co mógłbyś dodać do aranżacji swojego wnętrza. Jaki będzie w związku z tym odpowiedni wybór, który połączy to, co praktyczne, z czymś nowocześniejszym, nietypowym? Sprawdź kręcone schody Sylwia."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Sylwia", [
+                            "Przestawiamy model spiralnych schodów Sylwia. Tak jak inne schody tego typu, Sylwia tworzona jest na planie koła. Jest to kluczowy element odróżniający opisywane schody od innych modeli z rynku. Schody zakręcają bowiem, a poruszający się po nich użytkownik chodzi w rzeczywistości po okręgu aż do momentu dostania się na wyższy poziom.",
+                            "Kręcone schody Sylwia cechują się najwyższą jakością wykonania. Użyliśmy do nich sprawdzonych materiałów, jakie nie tylko estetycznie wyglądają, ale też spełniają wszelkie standardy bezpieczeństwa. Konstrukcją nośną schodów jest słup centralny ze stali nierdzewnej wraz z dystansami między stopniami. Dzięki temu całość jest stabilna i masywna, pomimo swojej lekkości i elegancji. Stopnie wykonane są ze szkła, co oznacza, że będziesz widzieć przez nie to, co znajduje się pod schodami. Nie zapomnieliśmy oczywiście o bezpieczeństwie korzystających ze schodów. Co bowiem zrobić, gdy zachwiejesz się lub będziesz potrzebować podparcia podczas wnoszenia czegoś po schodach? Podparcie to zapewni Ci równie solidna i masywna balustrada ze stali nierdzewnej wraz z giętym pochwytem metalowym."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Kiedy wybrać?", [
+                            "Kręcone schody Sylwia są modelem odpowiednim do różnego rodzaju wnętrz, a także mogącym spełnić potrzeby wielu, nawet bardzo wymagających klientów. Kwestie estetyczne dzięki przezroczystym schodom oraz lekkiej, nietypowej konstrukcji zachwycą każdego. Detale te sprawiają, że będzie to model schodów pasujący do nowoczesnych, a nawet industrialnych wnętrz. Ci z Was, którzy ponad wygląd stawiają funkcjonalność i bezpieczeństwo, również nie będą zawiedzeni schodami spiralnymi Sylwia. Wygodna balustrada pozwoli korzystać ze schodów nawet osobom starszym oraz zabezpieczy najmłodszych domowników przed upadkiem z wysokości."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody do każdego wnętrza", [
+                            "Tworzymy rozwiązania, które pasują do każdego rodzaju wnętrz. Nie boimy łączyć się klasycznych elementów z tym, co modne i nowoczesne. Powstają w ten sposób projekty takie, jak kręcone schody Sylwia, które możesz zobaczyć poniżej. Tak wyjątkowe połączenie pozwala nam na dotarcie zarówno do klientów preferujących klasyczne, spokojniejsze elementy wystroju wnętrz, jak też do wszystkich tych, którym zależy na podążaniu za najnowszymi trendami. Wobec naszych produktów, jak np. schodów spiralnych Sylwia nie można pozostać obojętnym."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/sylwia/1/1.jpg", null, new LabelModel([new LabelLineModel("sylwia ", "1")], ["konstrukcja nośna ze stali nierdzewnej z słupem centralnym oraz dystansów między stopniami", "stopnie szklane", "balustrada ze stali nierdzewnej z giętym metalowym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/sylwia/2/1.jpg", null, new LabelModel([new LabelLineModel("sylwia ", "2")], ["konstrukcja nośna ze stali nierdzewnej z słupem centralnym oraz dystansów między stopniami", "stopnie szklane", "balustrada ze stali nierdzewnej z giętym metalowym pochwytem"]))
                     ]);
             
                     break;
                     
                 case "kasandra":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Dlaczego schody spiralne?", [
+                            "W naszej ofercie posiadamy szeroki wybór schodów spiralnych. Dlaczego stawiamy na ten rodzaj schodów podczas tworzenia naszej oferty? Powodów jest kilka. Pierwszym z nich bez wątpienia jest nietypowa konstrukcja i, co za tym idzie, jej wyjątkowa estetyka. Schody spiralne, jak łatwo się domyślić, tworzone są na planie koła, przez co osoba korzystająca zakręca po okręgu, wchodząc na wyższy poziom. Jest to więc rozwiązanie znacząco różniące się od typowych schodów, które znamy chociażby z klatek schodowych w blokach. Konstrukcja taka daje wrażenie lekkości i według niektórych wygląda tak, jakby wisiała w powietrzu bez żadnego podparcia. Wiąże się z tym jeszcze jedna zaleta takich schodów – można wykorzystać je nawet na małej przestrzeni, nie przytłaczając jej. Schody mogą być w takich pomieszczeniach centralnym punktem ze względu na ich wyjątkowy wygląd, a nie toporność i duże rozmiary. Mówiąc o schodach spiralnych, należy też obalić mit, iż miałyby być one niewygodne i stwarzające zagrożenie chociażby dla małych dzieci. Wystarczy, aby były masywne i stabilne oraz miały zabezpieczenia takie, jak odpowiedniej wysokości balustrada z trwałego materiału, by poruszanie się po nich nie sprawiało nikomu większego kłopotu."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Kręcone schody Kasandra", [
+                            "Przedstawiamy model schodów spiralnych idealnie wpisujący się w opisany powyżej obraz pięknych i funkcjonalnych schodów na planie koła. Schody spiralne Kasandra to coś, co możemy z dumą i pełną świadomością polecić każdemu z naszych klientów. Tworzymy je, łącząc ze sobą różne materiały, wzmacniając jeszcze nietuzinkowy efekt wizualny – docierając do gustów zarówno bardziej tradycyjnych, jak też nowoczesnych klientów. Kręcone schody Kasandra posiadają konstrukcję nośną spawaną, obłożoną płytami gipsowo-kartonowymi, wykończoną stiukami dekoracyjnymi. Solidność balustrady zapewnia stal nierdzewna, z której jest wykonana oraz gięty metalowy pochwyt. Stopnie w tym modelu schodów mogą być wykonane z drewna bukowego lub granitu. Wszystkie wymienione elementy tworzą konstrukcję o wyjątkowych cechach. Jest to coś efektownego, lecz też eleganckiego, pełnego klasy, pasującego zarówno do nowoczesnych, designerskich wnętrz, jak też klasycznych, stylowych. W pierwszym wypadku schody takie będą idealnym dopełnieniem większego projektu aranżacyjnego – jeszcze jednym doskonale wpasowanym elementem całej koncepcji. W drugim z wymienionych przypadków schody spiralne Kasandra przełamią statyczność przestrzeni, nie naruszając jednak jej harmonii oraz elegancji."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Najlepsi specjaliści", [
+                            "Zaufaj nam i pozwól, abyśmy również dla Ciebie stworzyli projekt schodów idealnie dopasowanych do Twojego wnętrza. Być może również w Twoim domu lub obiekcie o innym charakterze doskonałym wyborem okażą się kręcone schody Kasandra. Każde pomieszczenie z odpowiednio dobranymi do niego schodami może stać się bardziej reprezentacyjne, stylowe, a także nowocześniejsze i ubarwiające przestrzeń. Sprawdź nasze projekty i skontaktuj się z nami – chętnie stworzymy schody również dla Ciebie."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/kasandra/1/1.jpg", null, new LabelModel([new LabelLineModel("kasandra ", "1")], ["konstrukcja nośna spawana stalowa obłożona płytami gipsowo-kartonowymi i wykończona stiukami dekoracyjnymi", "stopnie granitowe", "balustrada ze stali nierdzewnej z giętym metalowym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/kasandra/2/1.jpg", null, new LabelModel([new LabelLineModel("kasandra ", "2")], ["konstrukcja nośna spawana stalowa obłożona płytami gipsowo-kartonowymi i wykończona stiukami dekoracyjnymi", "stopnie i podstopnie bukowe", "balustrada ze stali nierdzewnej z giętym metalowym pochwytem"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/kasandra/3/1.jpg", null, new LabelModel([new LabelLineModel("kasandra ", "3")], ["konstrukcja nośna spawana stalowa obłożona płytami gipsowo-kartonowymi i wykończona stiukami dekoracyjnymi", "stopnie granitowe", "balustrada ze stali nierdzewnej z giętym metalowym pochwytem"]))
                     ]);
 
                     break;
 
                 case "kamila":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody spiralne Kamila", [
+                            "Wybór odpowiednich schodów domu powinien być podyktowany kilkoma kluczowymi czynnikami – przede wszystkim dostępną przestrzenią oraz rozmieszczeniem pomieszczeń a także wystrojem jaki ma panować w domu. W przypadku domów o niższym metrażu, znakomitą propozycję stanowią schody spiralne które nie tylko pozwalają zaoszczędzić dużą ilość miejsca, ale również wywołują niebywałe wrażenie wizualne! Takie właśnie są nowoczesne schody spiralne Kamila, w których nowoczesność efektownie łączy się z klasyką."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Drewniane schody w nowoczesnym domu i nie tylko", [
+                            "Wyjątkowe walory estetyczne, jakimi może pochwalić się naturalne drewno, są właściwie bezdyskusyjne! Zastosowanie drewna we wnętrzach za każdym razem robi pozytywne wrażenie – ten naturalny surowiec pozwala wprowadzić do domu aurę ciepła i niepowtarzalnego klimatu, którego nie da się z niczym porównać. Trudno więc dyskutować z tym, że drewniane schody są znakomitym rozwiązaniem do każdego wnętrza!",
+                            "Drewno ma szlachetny, a jednocześnie uniwersalny charakte r, dzięki czemu ładnie komponuje się z aranżacjami w różnych stylach. Warto jednak zadbać o to, aby surowiec ten powtórzył się w różnych elementach domowego wystroju, pozwalając na stworzenie wnętrza w którym panuje niebywały ład oraz harmonia."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Do jakich wnętrz pasują schody Kamila?", [
+                            "Schody spiralne Kamila w umiejętny sposób łączą w sobie nowoczesną linię z ponadczasową klasyką. Odnajdą się znakomicie właściwie w każdym wnętrzu, za każdym razem robiąc niebywałe wrażenie. Doskonale sprawdzą się w każdej nowoczesnej aranżacji, jak również w modnym wnętrzu w stylu skandynawskim lub hygge. Za sprawą swej niezwykle eleganckiej konstrukcji  skutecznie przyciągną spojrzenia i zachwycą nienagannym, drobiazgowym wykonaniem.",
+                            "Nowoczesne schody spiralne Kamila oparte są na konstrukcji nośnej ze słupa centralnego z drewnianymi tulejami oraz giętym policzkiem z drewna. Stopnie wykonane są ze szlachetnego drewna bukowego które słynie z wysokiej trwałości oraz solidności, a przy tym prezentuje się niezwykle estetycznie i wyjątkowo.",
+                            "Schody dodatkowo posiadają giętą balustradę, zapewniającą większe bezpieczeństwo oraz wygodę. Całość prezentuje się nadzwyczaj gustownie i stylowo sprawiając, że każda domowa aranżacja nabiera bardziej szlachetnego charakteru."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Centrum Schodów – poznaj naszą firmę!", [
+                            "Szczególnym atutem naszej firmy jest to, że możemy pochwalić się już ponad 20 – letnim doświadczeniem w swojej branży. Realizujemy projekty w całej Polsce, a także za granicą. W rezultacie mamy już ponad 6 tysięcy zadowolonych klientów, którzy mogli już przekonać się o wysokiej jakości naszych usług! Mamy również bogate doświadczenie w wykonywaniu nietypowych realizacji.",
+                            "Nasza oferta to szeroki wybór schodów w różnych stylach. Jesteśmy przekonani, że każdy może u nas znaleźć idealne schody do swojego domu. Serdecznie zachęcamy do zapoznania się z ofertą naszej firmy i dopasowania optymalnego rozwiązania, adekwatnego do własnych potrzeb."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/kamila/1/1.jpg", null, new LabelModel([new LabelLineModel("kamila ", "1")], ["konstrukcja nośna ze słupa centralnego z drewnianymi tulejami i giętym policzkiem drewnianym", "stopnie bukowe", "balustrada gięta drewniana"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/kamila/2/1.jpg", null, new LabelModel([new LabelLineModel("kamila ", "2")], ["konstrukcja nośna ze słupa centralnego z drewnianymi tulejami i giętym policzkiem drewnianym", "stopnie bukowe", "balustrada z metalowymi tralkami i giętym pochwytem drewnianym"]))
                     ]);
 
                     break;
 
                 case "lila":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Lila", [
+                            "Często stosowanym zabiegiem w nowoczesnych aranżacjach jest łączenie materiałów, które z pozoru wcale do siebie nie pasują. Doskonałym tego przykładem są kręcone schody Lila, idealne do każdego wnętrza w nowoczesnym stylu. Schody opierają się na malowanej proszkowo, metalowej konstrukcji, stopnie natomiast wykonane są z drewna bukowego. Ten niezwykle efektowny wariant schodów znakomicie sprawdzi się we wnętrzach, które nie dysponują pokaźnym metrażem. Wybierając spiralne schody możemy zaoszczędzić sporo miejsca i zyskać cenną przestrzeń."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Wyjątkowe schody do nowoczesnych wnętrz", [
+                            "Aranżacja nowoczesnego wnętrza wymaga starannego przemyślenia oraz zaplanowania. Bardzo ważne jest to, aby wszystkie elementy wystroju pasowały do siebie stylistycznie, tworząc spójną i estetyczną całość. Kręcone schody Lila doskonale wyglądają w towarzystwie drewnianych mebli oraz jasnego parkietu lub paneli. Pięknym tłem mogą być dla niego również modne, szare płytki podłogowe. Przyciągającym wzrok elementem jest spiralna metalowa konstrukcja nośna, która wykończona została designerską balustradą. Konstrukcja wykonana jest z giętych, pospawanych ze sobą policzków, zapewniających nienaganną trwałość. Malowany proszkowo metal w eleganckim, grafitowym kolorze prezentuje się stylowo i zapewnia ponadczasowy charakter. Uwagę przykuwają również wykonane z drewna bukowego stopnie, które mają niezwykle oryginalny i nietypowy kształt przypominający żagiel."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Bukowe schody spiralne Lila – do jakich wnętrz pasują?", [
+                            "Ze względu na swoją nowoczesną, niezwykle designerską formę, bukowe schody spiralne Lila dedykowane są aranżacjom w nowoczesnym stylu. Doskonale odnajdą się również w modnych wnętrzach modern classic, łączących w sobie klasykę z najnowszymi trendami. Te oryginalne schody w efektowny sposób dopełnią domową aranżację, zwracając na siebie uwagę nietypowym designem. Schody spiralne to świetne rozwiązanie nie tylko do wnętrz o ograniczonym metrażu. Wspaniale będą wyglądać również w przestronnym domu, a dzięki drobiazgowemu wykonaniu oraz wykorzystaniu najwyższej jakości materiałów, nawet po wielu latach wciąż będą zachwycać nienagannym i niezmiennym wyglądem!"
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Poznaj nasz oryginalne propozycje i wybierz najlepsze schody do własnego domu", [
+                            "Firma Centrum-Schodów już od ponad 20 -stu lat zajmuje się realizowaniem rozmaitych projektów schodów na terenie całej Polski. Nasz wykwalifikowany zespół składa się ze specjalistów, którzy z pasją i zaangażowaniem wykonują swoją pracę. Rezultatem są tysiące zadowolonych klientów, którzy zdecydowali się skorzystać z naszych usług i dzięki temu mogą cieszyć się doskonale wykonanymi i niebywale wytrzymałymi schodami o nienagannej prezencji. Wykonujemy schody drewniane, metalowe, a także wiele innych. Dzięki temu każdy może znaleźć u nas coś odpowiedniego dla siebie. Zachęcamy do zapoznania się z szerokim wachlarzem możliwości, jakie oferuje nasza firma. Sprawdź nasze atrakcyjne propozycje i wybierz najlepszy wariant do swojego domu!"
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/lila/1/1.jpg", null, new LabelModel([new LabelLineModel("lila ", "1")], ["konstrukcja nośna z giętych i pospawanych policzków", "stopnie bukowe", "balustrada metalowa malowana proszkowo"]))
                     ]);
 
                     break;
 
                 case "linda":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Linda", [
+                            "Już na etapie projektowania własnego domu musimy zastanowić się, jakie schody będą w nim najbardziej odpowiednie. Wybór uzależniony jest od wielu kwestii, w tym przede wszystkim od układu pomieszczeń oraz metrażu, jakim dysponujemy. W przypadku małych domów, doskonałe rozwiązanie stanowią schody o spiralnym układzie, takie jak nowoczesne, stalowo-drewniane schody spiralne Linda. Tą propozycję z pewnością doceni każdy, kto lubi nieszablonowe rozwiązania oraz ciekawą stylistykę. Pomimo swej prostej formy, schody skutecznie przykuwają uwagę i urzekają swą elegancją."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Ciekawe połączenia materiałów w nowoczesnych wnętrzach", [
+                            "Połączenie stali z drewnem jest często stosowanym zabiegiem w nowoczesnych aranżacjach. Takie rozwiązanie prezentuje się niezwykle ciekawie, a przy tym gwarantuje trwałość oraz odporność na najwyższym poziomie. Zastosowanie drewna pozwala skutecznie ocieplić surowy, chłodny charakter stali, dzięki czemu całość stwarza przyjemne wrażenie wizualne.",
+                            "Schody spiralne Linda oparte są na solidnej konstrukcji nośnej ze stali nierdzewnej, ze słupem centralnym oraz dystansami. Stalowa balustrada wykończona jest giętą, drewnianą poręczą. Stopnie schodów zostały wykonane z drewna bukowego, wyróżniającego się niezwykle szlachetnym charakterem, znakomitymi parametrami oraz wysoką odpornością na zużycie. Tak unikalna budowa czyni nasze schody niezwykle wytrzymałymi i w pełni bezpiecznymi. Nawet po upływie wielu lat, wciąż mogą zachwycać niezmienioną formą, a przy tym nie wymagają szczególnej pielęgnacji i łatwo można je utrzymać w należytej czystości."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Do jakich wnętrz pasują schody spiralne Linda?", [
+                            "Te wyjątkowe schody o ponadczasowym charakterze doskonale podkreślą nowoczesną aranżację wnętrza i świetnie będą się prezentować w każdym domu, niezależnie od metrażu którym on dysponuje. Spiralna konstrukcja pozwala zaoszczędzić przestrzeń, a użycie najwyższej jakości materiałów pozwala cieszyć się nienaganną estetyką przez wiele lat. Kręcone bukowe schody Linda doskonale wyglądają na tle jasnych paneli oraz wykonanych z jasnego drewna mebli. Za sprawą stonowanej kolorystyki, zgrabnie wkomponują się w każdy wystrój i zapewnią wyjątkowe wrażenie."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Poznaj szeroką ofertę firmy Centrum-Schodów!", [
+                            "Jeśli poszukujesz rzetelnego wykonawcy który zrealizuje wymarzony projekt schodów w Twoim domu, a przy tym zagwarantuje jakość oraz trwałość na najwyższym poziomie, oferta naszej firmy z łatwością spełni Twoje oczekiwania! Możemy pochwalić się już ponad 20 – letnim doświadczeniem w swojej dziedzinie. Szczególne znaczenie ma dla nas zadowolenie naszych klientów, dlatego w pełni angażujemy się w każdy realizowany projekt. Ponadto wyróżnia nas bogate doświadczenie w podejmowaniu się nietypowych realizacji.",
+                            "Oprócz wysokiego poziomu usług, dodatkowo zapewniamy niezwykle bogatą i zróżnicowaną ofertę w której dostępne są zarówno schody w stylu nowoczesnym, jak i klasycznym. Nie mamy żadnych wątpliwości, że każdy może u nas znaleźć idealny wariant schodów na miarę własnych potrzeb!"
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/linda/1/1.jpg", null, new LabelModel([new LabelLineModel("linda ", "1")], ["konstrukcja nośna ze stali nierdzewnej ze słupem centralnym oraz dystansów między stopniami", "stopnie bukowe", "balustrada ze stali nierdzewnej z giętym drewnianym pochwytem"]))
                     ]);
 
                     break;
 
                 case "tania":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Tania", [
+                            "Ten nietuzinkowy wariant przypadnie do gustu miłośnikom designerskich, nowoczesnych form. Bukowe schody spiralne Tania posiadają konstrukcję nośną ze słupa centralnego oraz dystansów między stopniami. Uwagę zwraca charakterystyczna „fajkowa” balustrada, wykonana z metalu malowanego proszkowo. Stopnie schodów to najwyższej klasy drewno bukowe, które może pochwalić się znakomitą trwałością oraz odpornością na zużycie. Schody spiralne Tania pozwolą nam cieszyć oczy przez wiele lat, pozostając praktycznie w niezmienionej formie i skutecznie opierając się upływowi czasu."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Znajdź najlepsze schody dla siebie i swojej rodziny!", [
+                            "Jak wybrać idealnie dopasowane schody do swojego domu? Trzeba przyznać, że nie jest to zadanie łatwe, jednak jeśli będziemy kierować się kilkoma podstawowymi zasadami, z pewnością dokonamy trafnego wyboru! Najlepiej zastanowić się nad tą kwestią już na etapie projektowania domu, tak aby mieć pewność, że będziemy w pełni zadowoleni z końcowego efektu.",
+                            "Jednym z najważniejszych czynników podczas wyboru właściwych schodów jest dostępna w pomieszczeniu przestrzeń. Jeśli miejsca nie ma zbyt wiele, doskonałe rozwiązanie stanowią schody w układzie spiralnym, takie jak na przykład bukowe schody spiralne Tania. Model ten można zgrabnie wkomponować w domową aranżację, a dzięki stosunkowo prostej konstrukcji, nie rzuca on się zanadto w oczy, jednocześnie nadając wnętrzu wrażenie lekkości i przestronności."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody spiralne Tania – idealny wybór do domu w nowoczesnym stylu", [
+                            "Jeśli cenisz sobie nietuzinkowe rozwiązania i szukasz ucieczki od szablonowego designu, schody spiralne Tania niewątpliwie przyciągną Twoją uwagę  i pozwolą stworzyć oryginalną aranżację we własnym domu. Stanowią wręcz idealne rozwiązanie do wnętrz w nowoczesnym stylu, a ze względu na ciekawą, metalową konstrukcję, odnajdą się również w klimatach industrialnych. W tym modelu zgrabnie połączyliśmy klasyczne piękno bukowego drewna z malowanym proszkowo metalem w uniwersalnym szarym kolorze. Całość gwarantuje ciekawy, nietuzinkowy efekt i wygląda zjawiskowo w każdym wnętrzu.",
+                            "Schody spiralne Tania warto zestawić z innymi elementami wykonanymi z drewna, np. drewnianymi meblami lub dodatkami. W taki sposób możemy stworzyć przepełniony harmonią i niezwykle przytulny domowy wystrój!"
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Najwyższej klasy schody? Tylko w Centrum Schodów!", [
+                            "W naszej firmie wierzymy, że miarą sukcesu jest pasja oraz zaangażowanie, które wkładamy w każdą podejmowaną przez nas realizację. Dzięki temu stale rośnie liczba klientów, którzy są zadowoleni z naszych usług! Atuty które nas wyróżniają to wieloletnie doświadczenie w swojej branży, stosowanie najwyższej jakości materiałów oraz skrupulatne realizowanie każdego projektu. Podejmujemy się zleceń na terenie całej Polski, mamy również na koncie wiele projektów zagranicznych. Bogata i zróżnicowana oferta naszego sklepu zapewnia szeroki wachlarz możliwości i umożliwia dopasowanie do każdego wnętrza, niezależnie od panującego w nim wystroju czy układu pomieszczeń."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/spiral/tania/1/1.jpg", null, new LabelModel([new LabelLineModel("tania ", "1")], ["konstrukcja nośna ze słupa centralnego i dystansów między stopniami", "stopnie bukowe", "balustrada \"fajkowa\" malowana proszkowo"]))
                     ]);
 
                     break;
