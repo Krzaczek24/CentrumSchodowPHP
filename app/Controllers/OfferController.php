@@ -683,66 +683,73 @@ class OfferController extends Controller
             {
                 case "patryk":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Patryk", [
+                            "Schody stanowią niezwykle ważny element w każdym domu oraz mieszkaniu wielopoziomowym. Oczywiście ich montaż wiąże się z celem przede wszystkim funkcjonalnym. W praktyce jednak tworzą również bardzo istotny akcent, wpływający bezpośrednio na estetykę całego wnętrza. Z tego też powodu warto wybrać do swojego lokum schody, które idealnie dopełnią charakter pomieszczenia i sprawią, że będzie się ono prezentować elegancko i stylowo. Nie można zapomnieć także o bezpieczeństwie, dlatego niezwykle ważne, aby stawiać przede wszystkim na konstrukcje wykonane z najlepszej jakości materiałów. Takie są właśnie nowoczesne schody wewnętrzne PATRYK, proponowane przez nas. Naszym celem jest tworzenie produktów, które zachwycą naszych klientów swym designem oraz funkcjonalnością. W naszym katalogu znajdziesz dziesiątki propozycji, które doskonale sprawdzą się w Twoim domu."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody wewnętrzne Patryk — idealne połączenie materiałów", [
+                            "Schody powinny wyróżniać się przede wszystkim swą solidnością. W końcu stanowią one połączenie pięter, z którego korzysta się przynajmniej kilka razy dziennie. Jeśli produkt wykonany będzie więc z najlepszej jakości materiałów, zapewni użytkownikom pełne bezpieczeństwo i satysfakcję. Nowoczesne schody wewnętrzne PATRYK powstają  w wyniku połączenia najwyższej klasy drewna oraz  solidnej  stali. Dzięki temu tworzą idealną kompozycję estetyczną oraz użytkową.",
+                            "Do wykonania stopni w modelu PATRYK, wykorzystujemy gatunki drewna wyróżniające się największą trwałością i odpornością na uszkodzenia. Zazwyczaj jest to buk oraz dąb, ponieważ to właśnie one sprawdzają się najlepiej. W połączeniu ze stalową konstrukcją tworzą bardzo stylowy efekt, który doskonale sprawdzi się przede wszystkim we wnętrzach nowoczesnych i industrialnych."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody wewnętrzne Patryk — trwałość i solidność", [
+                            "Metalowa konstrukcja to gwarancja solidności schodów. Twardy, odporny na wszelkie uszkodzenia oraz bardzo trwały materiał to po prostu idealna baza do stworzenia bezpiecznego i wręcz niezniszczalnego szkieletu. Do niedawna właśnie z tego powodu stosowano go przede wszystkim przy budowie schodów zewnętrznych. Jednak nowoczesne podejście designerów sprawiło, że coraz częściej konstrukcje takie zobaczyć możemy wewnątrz domów oraz mieszkań."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody wewnętrzne Patryk — konstrukcja dopasowana do Twoich potrzeb", [
+                            "Najważniejszą wartością jest dla nas zadowolenie i satysfakcja klientów. Z tego też powodu zapewniamy dopasowanie naszych projektów do ich potrzeb indywidualnych. Nowoczesne schody wewnętrzne PATRYK stworzą idealną kompozycję z aranżacją Twojego wnętrza, ponieważ wspólnie dostosujemy ich parametry do Twoich oczekiwań. Do dyspozycji mamy dziesiątki możliwości. Schody mogą przybierać rozmaite formy, a wybór materiałów zastosowanych w ich konstrukcji zależy właśnie od Ciebie. Z chęcią pomożemy Ci wybrać idealny projekt."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/1/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "1")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "podciąg do stropu z prętów kwadratowych"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/2/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "2")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z poziomymi wypełnieniami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/3/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "3")], ["konstrukcja nośna z profili o przekroju 4 x 8 cm", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/4/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "4")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z linkami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/5/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "5")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada stalowo-drewniana"]))
                     ]);
                     
                     break;
 
                 case "dawid":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Dawid", [
+                            "Nowoczesne schody wewnętrzne Dawid mogę być wykonane z e stali nierdzewnej lub zwykłej malowanej proszkowo. Balustrady wykonane są ze stali nierdzewnej, do której została zamocowana tafla hartowanego szkła. Zastosowanie tych odpornych materiałów gwarantuje, że wykonana z nich balustrada posłuży nam wiele lat. Nie wymaga ona również stosowania specjalistycznych zabiegów konserwujących. Stal nie rdzewieje i nie przebarwia się, natomiast hartowane szkło jest odporne na niewielkie uszkodzenia mechaniczne i rozbicie. Takie schody są równocześnie inwestycją przyszłościową, ponieważ nie wymagają napraw, są niezwykle odporne na zarysowania. Użycie najlepszych materiałów do wykonania stopni jak buk lub dąb gwarantuje, że schody nie rozsychają się, nie trzeszczą i nie skrzypią podczas użytkowania. Dodatkowym atutem jest wycięta z blachy konstrukcja nośna  wyglądająca bardzo nowocześnie."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Designerskie nowoczesne schody wewnętrzne Dawid w czterech wygodnych wariantach", [
+                            "Nowoczesne schody wewnętrzne Dawid to przede wszystkim możliwość wyboru wygodnego rozwiązania. Występują bowiem w czterech wariantach, z których każdy znajdzie dla siebie wygodne rozwiązanie. Pierwsze to schody Dawid zabiegowe, w których do wykonania stopni użyto dębu, a barierka została wykonana z szkła hartowanego. Jest to idealne rozwiązanie w domach, gdzie mieszkają dzieci. Szklana barierka zapobiega możliwości przedostania się dziecka na drugą stronę jak jest to możliwe w przypadku tradycyjnych poręczy ustawionych poziomo. Kolejna wersja schodów, czyli DAWID 2 posiada barierkę taką, jak w przypadku pierwszych, jednak stopnie zostały wykonane z drzewa bukowego. Zastosowanie innego rodzaju drzewa powoduje, że stopnie mają charakterystyczne dla buka, interesujące, naturalne usłojenia. Ostatnie ze schodów Dawid to połączenie dębowych stopni i designerskiej balustrady ze stali nierdzewnej. Te ostatnie wyróżniają się charakterystycznym kształtem i usytuowaniem. Nie są ustawione bowiem tradycyjnie pod ścianą, lecz kierują użytkownika na górną kondygnację ze środka holu. Daje to wrażenie, że pomieszczenie jest dużo większe, i, że cały dom urządzony luksusowo."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Uniwersalne, ale oryginalne, nowoczesne schody wewnętrzne Dawid", [
+                            "Wszystkie schody Dawid są bardzo uniwersalne, ponieważ do ich wykonania posłużyły elementy, które będą pasowały w każdym domu. Jednak całość została zrobiona w oryginalnym stylu, dlatego obecność takiej konstrukcji we wnętrzu sprawi, że dom będzie prezentował się oryginalnie, elegancko, ale i ponadczasowo. Będzie piękną wizytówką domu i jego największą ozdobą, która zachwyci wszystkich gości."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/1/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "1")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada z szyby hartowanej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/2/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "2")], ["konstrukcja nośna wycinana z blachy", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/3/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "3")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/4/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "4")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"]))
                     ]);
                     
                     break;
 
                 case "ada":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Ada", [
+                            "Schody z policzków metalowych posiadają doskonale skonstruowaną konstrukcję nośną, dlatego bezpiecznie mogą się po nich poruszać zarówno dzieci, jak i dorośli. Produkt jest również idealnie zabezpieczony, m.in. przy pomocy balustrady szklanej, metalowej, czy też szkła hartowanego. Każdy może wybrać dla siebie idealny model balustrady, tak aby całość tworzyła niesamowitą kombinację. Zainteresowani mają również szeroki wybór, jeśli chodzi o stopnie, ponieważ w tym przypadku można wybrać takie wersje jak: jesion, dąb, buk oraz szkło."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody z policzków metalowych - odświeżenie dotychczasowych wnętrz", [
+                            "Decydując się na zakup schodów z policzków metalowych ma się pewność tego, że optymalnie odświeża się dotychczasowe wnętrza. To bardzo istotne, ponieważ raz na jakiś czas powinno się przeprowadzić taką czynność, aby we własnym domu poczuć się bardziej komfortowo i tym samym polepszyć swoje samopoczucie. Schody są nowoczesne, wytrzymałe, pasują do wnętrz urządzonych w różnorakich stylach, np. skandynawskim lub angielskim. Balustrady, które są do nich dołączone mogą mieć wypalane wzory, wszystko zależy od tego, jakie konkretnie preferencje ma klient."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody z policzków metalowych - uniwersalność i wygoda", [
+                            "Schody z policzków metalowych są w pełni uniwersalne oraz bardzo wygodne w użytkowaniu. Spiszą się więc doskonale zarówno w domach, w których mieszkają młode, jak i nieco starsze osoby. Dzięki takim schodom całe wnętrze nabierze zdecydowanie innego charakteru, zacznie żyć własnym życiem. Postawienie na nowoczesne rozwiązania to bardzo dobry wybór, ponieważ zapewnienie sobie relaksu we własnym domu to w dzisiejszych czasach konieczność. W domach spędza się dużo czasu, a więc powinny znajdować się tam wydajne i wygodne produkty użytku codziennego, takie jak np. schody. Policzki metalowe sprawią, iż schody będą wytrzymałe i odporne na uszkodzenia. Co za tym idzie zainteresowani nie będą musieli przejmować się tym, iż po paru miesiącach ulegną poważnym usterkom technicznym."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/1/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "1")], ["konstrukcja nośna z policzków metalowych", "stopnie szklane", "pochwyt przyścienny"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/2/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "2")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana wraz z maskownicami na rotule"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/3/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "3")], ["konstrukcja nośna z policzków metalowych", "stopnie bukowe", "balustrada metalowa z wypalanymi wzorami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/4/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "4")], ["konstrukcja nośna z policzków metalowych", "stopnie jesionowe", "balustrada metalowa z wycinanymi wzorami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/5/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "5")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada z szybami hartowanymi"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/6/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "6")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana z maskownicami na rotule"]))
                     ]);
                     
                     break;
