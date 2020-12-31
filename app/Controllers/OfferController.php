@@ -699,11 +699,11 @@ class OfferController extends Controller
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/1/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "1")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "podciąg do stropu z prętów kwadratowych"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/2/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "2")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z poziomymi wypełnieniami"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/3/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "3")], ["konstrukcja nośna z profili o przekroju 4 x 8 cm", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/4/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "4")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z linkami"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/patryk/5/1.jpg", null, new LabelModel([new LabelLineModel("patryk ", "5")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada stalowo-drewniana"]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "podciąg do stropu z prętów kwadratowych"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z poziomymi wypełnieniami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna z profili o przekroju 4 x 8 cm", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada z linkami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/5/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "5")], ["konstrukcja nośna z profili o przekroju 6 x 6 cm", "stopnie dębowe", "balustrada stalowo-drewniana"]))
                     ]);
                     
                     break;
@@ -722,10 +722,10 @@ class OfferController extends Controller
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/1/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "1")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada z szyby hartowanej"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/2/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "2")], ["konstrukcja nośna wycinana z blachy", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/3/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "3")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/dawid/4/1.jpg", null, new LabelModel([new LabelLineModel("dawid ", "4")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada z szyby hartowanej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna wycinana z blachy", "stopnie bukowe", "balustrada z wypełnieniem szklanym"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna wycinana z blachy", "stopnie dębowe", "balustrada ze stali nierdzewnej"]))
                     ]);
                     
                     break;
@@ -744,320 +744,323 @@ class OfferController extends Controller
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/1/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "1")], ["konstrukcja nośna z policzków metalowych", "stopnie szklane", "pochwyt przyścienny"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/2/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "2")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana wraz z maskownicami na rotule"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/3/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "3")], ["konstrukcja nośna z policzków metalowych", "stopnie bukowe", "balustrada metalowa z wypalanymi wzorami"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/4/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "4")], ["konstrukcja nośna z policzków metalowych", "stopnie jesionowe", "balustrada metalowa z wycinanymi wzorami"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/5/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "5")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada z szybami hartowanymi"])),
-                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/ada/6/1.jpg", null, new LabelModel([new LabelLineModel("ada ", "6")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana z maskownicami na rotule"]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z policzków metalowych", "stopnie szklane", "pochwyt przyścienny"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana wraz z maskownicami na rotule"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna z policzków metalowych", "stopnie bukowe", "balustrada metalowa z wypalanymi wzorami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna z policzków metalowych", "stopnie jesionowe", "balustrada metalowa z wycinanymi wzorami"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/5/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "5")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada z szybami hartowanymi"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/6/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "6")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada szklana z maskownicami na rotule"]))
                     ]);
                     
                     break;
 
                 case "ignacy":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Ignacy", [
+                            "Jednobelkowe schody stalowo-drewniane sprawdzą się w nowocześnie urządzonych pomieszczeniach. Poszczególne modele są innowacyjne oraz intrygujące, posiadają zróżnicowaną konstrukcję nośną (np. zygzakowatą). Z racji swojej konstrukcji są łatwe w montażu, stabilne oraz trwałe. Wykazują się podwyższoną odpornością na zwiększone obciążenia. Co za tym idzie decyzja o ich zakupie do własnego mieszkania będzie jedną z najlepszych, na jaką domownicy mogli się zdecydować. Przy okazji tego typu produkty nie pochłoną wielkich pieniędzy z budżetu domowego."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Jednobelkowe schody stalowo-drewniane – różne wersje stopni", [
+                            "Jeśli chodzi o schody z tej kategorii zainteresowani mogą zdecydować się na różne wersje stopni, m.in. bukowe, czy też malowane na biało. Poza tym idealnie łączą się z solidnymi balustradami. W tym przypadku klienci również mają bogaty wybór, ponieważ do ich dyspozycji oddano balustrady ze szkła hartowanego, ze stali nierdzewnej lub też drewniano-metalowe. Warto przeanalizować wszystkie opcje spośród wyżej wymienionych i na sam koniec zdecydować, która balustrada będzie pasowała do tak eleganckich schodów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Jednobelkowe schody stalowo-drewniane – zwieńczenie pięknych wnętrz", [
+                            "Nie ulega wątpliwości, iż jednobelkowe schody stalowo-drewniane to doskonałe zwieńczenie pięknie urządzanych wnętrz. Osoby chcące postawić na nietuzinkowe rozwiązania, powinny wziąć pod uwagę właśnie takie rozwiązania. Z pewnością przypadną im do gustu oraz posłużą przez wiele długich sezonów. Schody wykonywane są z bardzo solidnych materiałów, nie ma mowy o tym, aby nawet podczas intensywnego użytkowania pojawiły się na nich jakieś uchybienia. Osoby zdecydowane na ich zakup nacieszą oczy klasyczną urodą drewna. Wchodzenie po takich schodach będzie dla domowników jedynie przyjemnością. Warto czasami postawić na zupełnie nowy look dotychczasowych wnętrz, ponieważ tym samym człowiek odmienia swoje całe życie i wizję świata. To udany sposób na szybką i bezproblemową poprawę samopoczucia."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna jednobelkowa zygzakowata", "stopnie wybielane na biało", "balustrada szklana z szyby hartowanej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna jednobelkowa ze stali nierdzewnej", "stopnie bukowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna jednobelkowa ze stali nierdzewnej", "stopnie bukowe", "balustrada drewniano-metalowa"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna jednobelkowa malowana proszkowo", "stopnie bukowe malowane na biało", "balustrada szklana z szyby hartowanej"]))
                     ]);
                     
                     break;
 
                 case "patryko-rzymskie":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Patryko - Rzymskie", [
+                            "Bukowe schody rzymskie to rozwiązanie, które sprawdzi się w wielu salonach. Jeśli ktoś chciałby urządzić własne pomieszczenia w nietuzinkowy sposób, to taka opcja jest właściwym wyborem. Konstrukcja nośna wykonana jest ze starannie dobranych profili, dystans między nimi nie jest zbyt duży. Dzięki temu poruszanie się po schodach nie sprawia trudności żadnemu domownikowi. Zainteresowani mogą wybrać stopnie dębowe lub też bukowe. Każda z tych propozycji jest nie tylko wytrzymała, ale również bardzo klasowa."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Bukowe schody rzymskie - pełne bezpieczeństwo we własnym domu", [
+                            "Inwestując w schody rzymskie, pieniądze przeznacza się nie tylko na ponadczasowe rozwiązania domowe. Ponadto inwestuje się we własne bezpieczeństwo, ponieważ tego typu schody połączone są z trwałymi i niezawodnymi balustradami. Mogą być one wykonane z metalu, z szyby hartowanej lub też stali nierdzewnej. Poza tym są malowane proszkowo, a cała kombinacja prezentuje się nie tylko pięknie, ale też zapewnia bezpieczne użytkowanie, nawet w przypadku małych dzieci. Warto zdecydować się na tak sprawdzone produkty, dzięki którym wchodzenie oraz schodzenie ze schodów będzie komfortowym doświadczeniem."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Bukowe schody rzymskie - kreatywność oraz najwyższej jakości materiały", [
+                            "Bukowe schody rzymskie wykonywane są z najwyższej jakości materiałów, poza tym są bardzo kreatywne, dlatego spiszą się doskonale w nowoczesnych i awangardowych wnętrzach. Czasami remont we własnym domu jest koniecznością, warto bazować w takich przypadkach na oryginalnych rozwiązaniach, zwłaszcza jeśli chodzi o schody. W piętrowych domach korzysta się z nich bardzo często, a więc powinny zapewniać komfort i pełne bezpieczeństwo. Różnią się od siebie wykończeniem oraz zestawieniem profili. W związku z tym każdy domownik może przeznaczyć zaoszczędzone środki finansowe, na takie schody jakie przypadną mu do gustu. Możliwości wykonań w takich przypadkach jest naprawdę sporo, dlatego wszystko zależy od indywidualnej koncepcji klienta lub fachowców."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie dębowe", "balustrada szklana z szyby hartowanej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie bukowe", "balustrada metalowa malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie bukowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie bukowe", "balustrada metalowa malowana proszkowo"]))
                     ]);
                     
                     break;
 
                 case "rzymskie":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe rzymskie", [
+                            "Metalowe schody rzymskie to świetna propozycja dla osób, które mieszkają w domu piętrowym. Wiadomo, że w takich domach potrzebne są schody, aby można było swobodnie przemieścić się z dołu na górę oraz z powrotem. Domownicy powinni polegać na nowoczesnych, eleganckich i trwałych rozwiązaniach. Schody rzymskie sprawdzą się w tym przypadku optymalnie. Klientom zapewniona jest wytrzymała konstrukcja nośna, poszczególne stopnie malowane są na biało. Można zdecydować się również na kolor jesionowy. Schody łączy się ze specjalnie dobraną balustradą, aby zapewnić wszystkim domownikom należyte bezpieczeństwo. Tyczy się to zwłaszcza rodzin, w których są małe dzieci."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Metalowe schody rzymskie - wygodne przemieszczanie się z piętra na piętro", [
+                            "Atutem metalowych schodów rzymskich jest to, iż można z ich pomocą wygodnie przemieszczać się z piętra na piętro. W związku z tym na pewno warto skorzystać z tak ciekawej możliwości i zainwestować w wydajne rozwiązania domowe. Schody charakteryzują się wspaniałym designem, balustrada jest w tym przypadku malowana proszkowo. Do produkcji schodów wykorzystywane są najlepsze materiały na rynku, dlatego potrafią wytrzymać spore obciążenia i nie zawodzą nawet po kilku latach użytkowania."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Metalowe schody rzymskie - odrobina nowoczesności w każdym domu", [
+                            "Każdy domownik chciałby od czasu do czasu zapewnić sobie odrobinę nowoczesności, a metalowe schody rzymskie mogą mu w tym pomóc. Warto więc polegać na takich materiałach i zdecydować się na ich montaż pomiędzy piętrami. Ich zaletą są również niepowtarzalne kształty, montować powinni je jednak doświadczeni fachowcy, aby cały proces przebiegł bez przykrych niespodzianek. Należy pamiętać o tym, że schody powinny być co jakiś czas poddawane profesjonalnej konserwacji, czym wydłuży się ich żywotność. Jeśli ktoś chce odmienić swoje wnętrza na bardziej nowoczesne, to takie produkty są dla niego doskonałym wyborem. Nie warto zastanawiać się zbyt długo nad taką inwestycją, tylko jak najszybciej ją zrealizować."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z dystansami między stopniami oraz bolcami w ścianach", "stopnie malowane na biało", "balustrada metalowa malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z dystansami między stopniami ze stali nierdzewnej", "stopnie jesionowe", "balustrada ze stali nierdzewnej"]))
                     ]);
                     
                     break;
 
                 case "tymon":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Tymon", [
+                            "Dobre schody wewnętrzne to nie tylko element konstrukcyjny budynku, umożliwiający komunikację między kondygnacjami. Sztuką jest zaprojektować takie schody, które są funkcjonalne i idealnie wkomponowane w architekturę wnętrza pomieszczenia. Nasza firma wychodzi naprzeciw oczekiwaniom klientów i oferuje nowoczesne, stylowe i piękne schody, które będą ozdobą każdego nowoczesnego domu."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody w nowoczesnym domu", [
+                            "Wewnętrzne schody Tymon to solidna konstrukcja opierająca się na jednej belce. Dzięki takiej konstrukcji schody wydają się lekkie i swobodnie komponują się z otoczeniem. Nowoczesna i unikalna konstrukcja idealnie pasuje do każdego nowoczesnego domu, mieszkania czy biura. Dzięki wieloletniej tradycji nasze schody zachwycają wszystkich gości naszych zadowolonych klientów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Jedna konstrukcja wiele możliwości", [
+                            "Nowoczesne schody wewnętrzne Tymon to unikalna konstrukcja, która daje wiele możliwości. W każdej konfiguracji schodów TYMON stosujemy ciepłe, solidne i bardzo wytrzymałe schody dębowe. Stopnie posiadają wysoką odporność na ścieranie i na uderzenia mechaniczne. Dzięki temu już nie trzeba się martwić o spadające przedmioty i szalone zabawy dzieci.",
+                            "Pojedyncza belka konstrukcyjne może być prosta i umiejscowiona tradycyjnie wzdłuż ściany, lecz nie ma problemów, jeżeli zachodzi potrzeba zastosowania schodów łamanych lub kręconych. Praktycznie wszystkie opcje w dowolnej konfiguracji są możliwe do wykonania.",
+                            "Sześć opcji schodów Tymon zapewnia zastosowanie różnych ciekawych i stabilnych balustrad. Każdy znajdzie odpowiedni typ balustrady pasujący do wielu wnętrz. W naszej ofercie znajdą Państwo olśniewające balustrady szklane z poręczą drewnianą, wytrzymałe spawane balustrady metalowe oraz tradycyjne drewniane. Balustrady szklane montowane są panelowo do każdego stopnia i posiadają zwiększoną wytrzymałość. Wszystkie balustrady metalowe są malowane proszkowo i posiadają wysoką wytrzymałość na zarysowania. Tradycyjne balustrady drewniane wyposażone są w wysokiej jakości drewniane szczeble przymocowane do każdego stopnia schodów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Ciepłe, przyjazne i ergonomiczne schody wewnętrzne Tymon", [
+                            "Prezentowane schody doskonale współgrają z każdym nowoczesnym pomieszczeniem. Nasze konstrukcje dodają pomieszczeniom blasku i ciepła. Wysokiej jakości materiały zastosowane do budowy schodów łatwo utrzymuje się w czystości. Idealna wysokość stopni sprawi, że każdy swobodnie będzie mógł korzystać ze schodów. Dzięki luksusowym dębowym stopniom, chodzenie bosą stopą po schodach to sama przyjemność. Balustrada na idealnej wysokości skutecznie pomoże wejść na górę i zapobiegnie upadkowi podczas schodzenia. Wiele wzorów i kolorów balustrad zapewni duży wybór i dostosowanie do wymagań każdego klienta."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.png", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada stalowa spawana malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada stalowa spawana malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada stalowa spawana malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada stalowa spawana malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/5/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "5")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada stalowa spawana malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/6/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "6")], ["konstrukcja nośna jednobelkowa", "stopnie dębowe", "balustrada drewniana"]))
                     ]);
                     
                     break;
                     
                 case "natalia":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Natalia Stalowa", [
+                            "Schody ze stali nierdzewnej to rozwiązania znajdujące zastosowanie w wielu tradycyjnych wnętrzach. Są bardzo solidne, stabilne oraz wytrzymałe. Dodatkowo charakteryzują się podwyższoną odporność na nieco większe obciążenia. Ich konstrukcja nośna jest w pełni zadowalająca, a dystans między stopniami nie jest zbyt duży. Dzięki temu nawet osoby starsze nie będą mieć problemów z tym, aby swobodnie poruszać się po takich schodach. Schody mogą być połączone z balustradami ze stali nierdzewnej, metalowymi (malowanymi proszkowo) lub też z wypełnieniem szklanym."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody ze stali nierdzewnej - tradycja i piękno w jednym miejscu", [
+                            "Największą zaletą proponowanych schodów ze stali nierdzewnej jest to, iż łączą w sobie tradycję oraz wysublimowane piękno. Warto zdecydować się na zainwestowanie w nie, z tego względu, iż posłużą w domach przez wiele lat. Przy okazji nie trzeba obawiać się o występowanie niebezpiecznych uszczerbków. Stopnie w takich schodach dostępne są w wersji dębowej lub też bukowej. Każda osoba powinna się zastanowić nad tym, która konkretnie opcja jest dla niej bardziej korzystna, biorąc pod uwagę np. aranżację całego pomieszczenia lub preferowane style architektoniczne."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody ze stali nierdzewnej - konstrukcja odpowiadająca wymaganiom każdego klienta", [
+                            "Schody ze stali nierdzewnej zostały stworzone w taki sposób, aby ich całkowita konstrukcja odpowiadała w stu procentach wymaganiom każdego klienta. To bardzo ważne, ponieważ takie schody mają służyć przede wszystkim ludziom. Oczywiście klienci dbają o to, aby pięknie wyglądały, ale jednocześnie muszą być funkcjonalne i wydajne. W tym przypadku nie ma się co o to martwić, ponieważ oczekiwania klientów z pewnością będą zaspokojone. To stosunkowo niedrogie modele, w porównaniu do innych propozycji rynkowych. Stal nierdzewna charakteryzuje się jednak podwyższoną odpornością na wiele różnych czynników zewnętrznych. Z racji tego taka inwestycja ma ogrom plusów i jeśli ktoś szuka dla siebie odpowiednich schodów, to te wykonane ze stali nierdzewnej będą optymalne."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna jednobelkowa ze stali nierdzewnej", "stopnie dębowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna jednobelkowa malowana proszkowo", "stopnie dębowe", "balustrada metalowa malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna jednobelkowa ze stali nierdzewnej", "stopnie bukowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/4/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "4")], ["konstrukcja nośna jednobelkowa ze stali nierdzewnej", "stopnie bukowe", "balustrada z wypełnieniem szklanym"]))
                     ]);
                     
                     break;
                     
                 case "matylda":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Matylda", [
+                            "Kręte schody stalowo-drewniane to strzał w dziesiątkę, jeśli ktoś chce postawić na pełną oryginalność we własnym domu. Posiadanie krętych schodów to w wielu przypadkach marzenie z dzieciństwa. Nie ulega wątpliwości, iż jest to atrakcyjne rozwiązanie nie tylko dla dorosłych, ale też dla dzieci. Zaletą takich produktów jest to, że są doskonale zabezpieczone, a więc podczas wchodzenia i schodzenia ze schodów nikomu nie stanie się krzywda. Stopnie proponowane klientom dostępne są w odmianie bukowej. Świetnie odświeżą każde wnętrze."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Kręte schody stalowo-drewniane - bardzo wytrzymała konstrukcja nośna", [
+                            "Na uwagę zasługuje to, że kręte schody stalowo-drewniane posiadają bardzo wytrzymałą konstrukcję nośną. Poza tym zainteresowani powinni docenić to, iż dystans pomiędzy kolejnymi stopniami nie jest zbyt duży, co jest dobrą informacją dla rodzin, w których żyją małe dzieci lub osoby starsze i schorowane. Pokonywanie stopni będzie więc bardzo wygodną czynnością, nikomu nie przysporzy większych trudności oraz dyskomfortu. Balustrada wykonywana do takich schodów wykonywana jest ze stali nierdzewnej lub też z drewna. Ostateczny wybór będzie należał w tej kategorii do samego klienta."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Kręte schody stalowo-drewniane - elegancja na pierwszym miejscu", [
+                            "Opisywana odmiana schodów to prawdziwa elegancja, więc jeśli komuś zależy na takich produktach powinien w nie jak najszybciej zainwestować i się przed tym nie wzbraniać. Produkty dostępne są w naprawdę dobrych cenach, cechują się wydłużoną żywotnością, trwałością i ponadczasowym designem. Tego właśnie oczekuje się od zakupionych modeli. Nic dziwnego, że ich popularność na polskim rynku jest bardzo duża. Najważniejszą informacją dla zainteresowanych jest to, iż proces montażu wybranych schodów stalowo-drewnianych w krętej wersji nie jest skomplikowaną czynnością. Wystarczy zatrudnić do takiego zadania wykwalifikowanych fachowców, którzy będą wiedzieli jakie prace wykonać krok po kroku, aby domownicy mogli jak najszybciej skorzystać z nowego asortymentu."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie bukowe", "balustrada gięta drewniana"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z profila o przekroju 6 x 6 cm oraz dystansów między stopniami", "stopnie bukowe", "balustrada ze stali nierdzewnej"]))
                     ]);
                     
                     break;
                     
                 case "bartek":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody Bartek", [
+                            "Schody powinny posiadać wymiar praktyczny, ale także cieszyć oko piękną oprawą. Takie właśnie są schody bukowe Bartek."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Niezwykłe właściwości drewna", [
+                            "Drewniane schody cieszą się niesłabnącą od lat popularnością. Nic dziwnego, posiadają wiele zalet. Stawia się je na etapie już prac wykończeniowych, dzięki czemu można indywidualnie dopasować je do pomieszczenia i swoich potrzeb. Drewno, czyli materiał w większości użyty do ich wykonania cechuje niezwykła wytrzymałość na czynniki zewnętrzne. Drewno emanuje ciepłem, wprowadzając przytulny klimat do każdej aranżacji. Materiał ten zapewnia także lekkość konstrukcji. Dzięki temu schody są niezawodne i umożliwiają wieloletnie użytkowanie.",
+                            "Schody w domu jednorodzinnym są zwykle często i intensywnie użytkowane. Mimo lekkości schodów drewnianych, są one mocne i niezwykle wytrzymałe, więc zdecydowanie nadają się do budynków mieszkalnych. Solidne schody bukowe będą świetnie współgrać z innymi elementami wnętrza, np. cegłą lub metalem. Ponadto drewno jest materiałem ponadczasowym, który zawsze będzie w modzie. Stawiasz zatem na klasykę połączoną z najlepszej rangi jakością produktów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Drobiazgowe wykończenie", [
+                            "Proponowane schody zostały wykonane z dbałością o każdy szczegół. Wykończone balustradą ze stali nierdzewnej, która również znana jest ze swojej trwałości. Oprócz tego zapewnia elegancki design, który świetnie wpisze się w każdą aranżację wnętrza, niezależnie od stylu w jakim jest utrzymana. Schody bukowe Bartek doskonale sprawdzą się we wnętrzu utrzymanym w klasycznym tonie, jak i nowoczesnym. Wpiszą się w styl industrialny czy hollywoodzki. Zapewniają szeroką dowolność aranżacji wnętrza. Gustowne wykończenie wprowadzi do wnętrza szyk i klasę, podkreślając jednocześnie jego charakter.",
+                            "Schody bukowe Bartek są wygodne w użytkowaniu i świetnie wpisują się w każde pomieszczenie, nie zabierając tym samym nadmiernej ilości przestrzeni. Wybierając proponowane przez nas schody, wybierasz najwyższą jakość produktu połączoną z unikalnym wyglądem."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna modułowa", "stopnie bukowe", "balustrada metalowa malowana proszkowo"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna modułowa ze stali nierdzewnej polerowanej", "stopnie bukowe", "balustrada ze stali nierdzewnej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/3/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "3")], ["konstrukcja nośna modułowa", "stopnie bukowe", "balustrada metalowa malowana proszkowo"]))
                     ]);
                     
                     break;
                     
                 case "ceownikowe":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Czym są schody ceownikowe?", [
+                            "Ceowniki, które stanowią element składowy schodów są wyrobami hutniczymi, które w przekroju przypominają literę C. Zimnogięte lub gorącowalcowane kształtowniki są niezwykle uniwersalne w zastosowaniu, przybierając nieograniczone rozmiary. Znakomitej jakości materiał konstrukcyjny sprawdza się w budownictwie, przemyśle oraz wielu dziedzinach, wymagających zastosowania tego typu kształtowników. Jako składowa schodów ceowniki zostały ubrane w nowoczesną formę, zamkniętą w drewnianą zaślepkę. Połączenie drewna i stali sprawia, że schody ceownikowe są nie tylko solidne i trwałe, ale i wyjątkowo efektowne."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Modne schody ozdobą wnętrza", [
+                            "Dobór schodów do domu lub firmy wiąże się nie tylko z uwzględnieniem solidności i trwałości wykonania. Schody powinny doskonale odzwierciedlać charakter pomieszczeń oraz wyznaczać stylistykę aranżacji. Dostępne w wielu wersjach schody nowoczesne charakteryzują się zastosowaniem materiałów takich jak stal i drewno. Podobnie prezentowane, wyjątkowe schody ceownikowe z balustradą ze stali, malowaną proszkowo. Praktyczne, trwałe i niezwykle efektowne schody to stabilność użytkowania przez wiele lat."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Gdzie sprawdzą się schody ceownikowe?", [
+                            "Zastosowanie ażurowych stopni drewnianych w połączeniu ze stalową balustradą, również o wysokiej transparentności dodaje konstrukcji lekkości. Schody odpowiednie będą w przypadku projektów, uwzględniających schody w salonie. Wpisane w kompozycję wystroju salonu schody ceownikowe będą jego wyjątkową ozdobą, a jednocześnie wygodnym ciągiem komunikacyjnym, zapewniającym łatwość przemieszczania się. Zastosowanie schodów  tego typu w pomieszczeniach biurowych oraz lokalach gastronomicznych wydobędzie nowoczesny charakter pomieszczeń oraz zapewni znakomity efekt wizualny. Wygodne w użyciu schody sprawią, że wielokrotne pokonywanie odległości, pomiędzy niższą, a wyższą kondygnacją nie będzie uciążliwe. Jakość materiału i montażu stanowi gwarancję niezawodności."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z ceowników wraz z maskownicami dębowymi", "stopnie dębowe", "balustrada metalowa malowana proszkowo"]))
                     ]);
                     
                     break;
                     
                 case "krzysia":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody metalowe Krzysia", [
+                            "W dzisiejszych czasach schody wewnętrzne to nie tylko element konstrukcyjny budynku, ale i wysokiej klasy ozdoba domu i mieszkania. Projektując nasze schody, staramy się zaspokoić wszystkie potrzeby naszych klientów i stworzyć element bezpieczny, wytrzymały i cieszący oko. Wieloletnie doświadczenie umożliwiło nam stworzenie nowoczesnych schodów, które pasują do stylowej i ekstrawaganckiej architektury dzisiejszych domów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesne schody wewnętrzne Krzysia", [
+                            "Konstrukcja schodów Krzysia opiera się na dwóch metalowych policzkach ze stali nierdzewnej. Element konstrukcyjny jest ażurowy i ma wycięte oczka, co sprawia, że schody mają dużą wytrzymałość i są lekkie. Schody wewnętrzne Krzysia stanowią element zwieńczający i dopełniający całość konstrukcji budynku. Gwarantujemy, że nasze schody staną się obiektem pożądania i zazdrości Państwa rodziny i sąsiadów. Zapewniamy, że nasze schody można dostosować do różnych wysokości kondygnacji i wielu konstrukcji budynków."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Dwie konfiguracje schodów wewnętrznych", [
+                            "Unikalną konstrukcję schodów wewnętrznych Krzysia przedstawiamy w dwóch konfiguracjach. Konstrukcja w każdej konfiguracji pozostaje bez zmian i opiera się na dwóch płaskich, metalowych, wytrzymałych policzkach."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Krzysia 1", [
+                            "Schody Krzysia 1 to propozycja o jaśniejszej kolorystyce. Gustowne policzki konstrukcyjne ze stali nierdzewnej są polerowane i idealnie komponują się ze szklaną balustradą. Schody posiadają wysokiej klasy stopnie jesionowe, które są odporne na ścieranie i mają podwyższoną wytrzymałość na uderzenia mechaniczne. Takie rozwiązanie sprawdzi się, gdy mamy dzieci lub w przypadku częstszego korzystania z wyższej kondygnacji.",
+                            "Piękna szklana balustrada z szyby hartowanej zapewnia wysoką wytrzymałość. Balustrada przymocowana jest do policzków za pomocą gustownych, chromowanych trzpieni. Zwieńczeniem balustrady jest wysokiej jakości drewniana poręcz."
+                        ]),
+                        new OfferDetailsSegmentModel("Krzysia 2", [
+                            "Druga konfiguracja schodów Krzysia charakteryzuje się ciemniejszymi kolorami. Element konstrukcyjny w postaci policzków jest matowy. Przyjemne stopnie schodów wykonane są z dębu i doskonale komponują się z ażurowymi policzkami. Dębowe stopnie to również gwarancja wysokiej wytrzymałości i trwałości na lata.",
+                            "W schodach Krzysia 2 dodatkowym elementem jest zastosowanie pionowych szczebli, które stanowią element konstrukcyjny całej balustrady. Do szczebli za pomocą zacisków stabilnie przymocowane są szklane panele z szyby hartowanej. Ciemne dębowe poręcze są idealnym zwieńczeniem balustrady."
+                        ]),
+                        new OfferDetailsSegmentModel("Bezpieczeństwo i ergonomia", [
+                            "Szerokie i stabilne stopnie naszych schodów zapewnią bezpieczne poruszanie się między kondygnacjami. Idealna wysokość stopnia sprawia, że wchodzenie po schodach nie będzie męczące. Ciepłe, drewniane stopnie zachęcą do poruszania się gołą stopą. Luksusowa poręcz zapewni stabilny chwyt i pomoże wejść na piętro. Odpowiednia wysokość balustrady chroni przed niekontrolowanym upadkiem."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z policzków metalowych ze stali nierdzewnej z wyciętymi \"oczkami\"", "stopnie jesionowe", "balustrada szklana z szyby hartowanej"])),
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/2/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "2")], ["konstrukcja nośna z policzków metalowych ze stali nierdzewnej z wyciętymi \"oczkami\"", "stopnie dębowe", "balustrada szklana z szyby bezpiecznej"]))
                     ]);
                     
                     break;
                     
                 case "klara":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Eleganckie i solidne schody Klara do każdego wnętrza", [
+                            "Wybór właściwych schodów wewnętrznych to niełatwe zadanie. Musimy wziąć pod uwagę funkcjonalność, wygląd pasujący do wnętrza, a także jakość wykonania. Jeśli szukasz czegoś wyjątkowego, nowoczesne schody Klara z całą pewnością sprostają Twoim oczekiwaniom. Cechują się one lekką i przestronną konstrukcją, a jednocześnie nie zajmują wiele miejsca. To sprawia, że są wyjątkowo cenione przez klientów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Funkcjonalna konstrukcja nośna", [
+                            "Ten model schodów jest ustawiany w taki sposób, aby jeden bok mógł zostać zamontowany na ścianie. Wykorzystuje się konstrukcje nośne wykonane z eleganckiej, ciemnej stali. To one zapewniają schodom oczekiwaną stabilność. Do konstrukcji nośnej przymocowane są natomiast drewniane szczeble. Bok zewnętrzny jest obudowany balustradą ze stali nierdzewnej. Cała konstrukcja jest wyjątkowo lekka oraz daje uczucie przestronności. To świetny wybór do pomieszczeń, w których stawiamy na większą oszczędność miejsca."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("W jakich sytuacjach sprawdzą się te schody?", [
+                            "Jest to model stosowany wewnątrz budynku. Dębowe schody Klara łączą w sobie cechy elegancji i prostoty typowej dla stylu skandynawskiego. Niemniej jednak świetnie sprawdzą się także w bardziej surowych, industrialnych wnętrzach. Projekt w swojej pełnej krasie robi ogromne wrażenie na klientach. Przemyślane łączenie drewna oraz stali nierdzewnej sprawia, że schody komponują się perfekcyjnie z wieloma aranżacjami.",
+                            "Mamy tu trzy dominujące kolory: Konstrukcja nośna oraz poręcz balustrady są wykonane z ciemnej stali wchodzącej w czerń. Stopnie wykonano natomiast z jasnego dębu. Wewnętrzną zabudowę balustrady uzupełniają cienkie, srebrne pręty. Wykorzystano zatem bardzo praktyczne kolory świetnie odnajdujące się w każdej sytuacji."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Z myślą o bezpieczeństwie i komforcie klientów", [
+                            "Materiały, z których produkowane są dębowe schody Klara, są starannie selekcjonowane w trosce o maksymalne bezpieczeństwo naszych klientów. Wybieramy jedynie najtrwalsze materiały, które przez wiele, wiele lat będą odznaczać się nienaganną wytrzymałością oraz odpornością na uszkodzenia mechaniczne. Zarówno dębowe stopnie, jak również stalowa balustrada cechują się perfekcyjnym wykonaniem. Dokładamy wszelkich starań, aby produkty dostępne w naszej ofercie stanowiły idealne połączenie innowacji z jakościowym wykonaniem."
+                        ]),
+                        new OfferDetailsSegmentModel("Schody Klara to rozwiązanie dla wymagających", [
+                            "Jeśli oczekujesz od schodów połączenia funkcjonalności, eleganckiego wyglądu, a także solidnego wykonania, nowoczesne schody Klara z całą pewnością sprostają Twoim oczekiwaniom. To oryginalny projekt, który stawia na ponadczasowy wygląd, dzięki czemu schody świetnie wkomponują się do każdego pomieszczenia. To jeden z najbardziej prestiżowych i popularnych modeli w naszej ofercie. Setki klientów mogą wystawić pozytywną rekomendację pod adresem schodów Klara."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z policzków metalowych", "stopnie dębowe", "balustrada ze stali zwykłej i nierdzewnej"]))
                     ]);
                     
                     break;
                     
                 case "franek":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody Franek", [
+                            "Proponowane przez nasz sklep schody Franek to doskonała propozycja dla wszystkich miłośników nowoczesnego i industrialnego stylu. Zostały wykonane z najwyższej klasy materiałów, dlatego stanowią doskonały kompromis pomiędzy funkcjonalnością i estetyką."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nowoczesność i elegancja", [
+                            "Stopnie wykonane z bukowego drewna oraz balustrada z hartowanego szkła to elementy, które wpływają na unikalny design schodów Fanek. Już pierwszy rzut oka na tę konstrukcję przekonuje, że będzie ona idealnym uzupełnieniem wnętrza utrzymanego w nowoczesnym stylu. Połączenie drewna i szkła to jeden z najbardziej charakterystycznych trendów wnętrzarskich ostatnich lat. Schody te będą doskonale pasowały do drewnianych podłóg wyszlifowanych na wysoki połysk oraz do ścian utrzymanych w białych lub szarych barwach. Również wnętrza industrialne będą doskonałym miejscem do zamontowania proponowanego modelu schodów. Schody Franek pasują zarówno do otwartego salonu, jak i do hallu lub zamkniętej klatki schodowej."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Trwałość na lata", [
+                            "Bukowe schody z szklaną balustradą Franek zostały wykonane z najlepszej klasy materiałów. Połączenie bukowego drewna, hartowanego szkła i stali to mieszkanka, która tworzy wyjątkowo stabilną i estetyczną konstrukcję. Bukowe drewno jest znane ze swojej wyjątkowej wytrzymałości, dlatego decydując się na ten model schodów możemy mieć pewność, że przy odpowiedniej konserwacji będą służyły nam przez długie lata. Istotną rolę pełni tutaj nowoczesna szklana balustrada, która cechuje się optymalną wysokością. Jedną z najważniejszych kwestii, jakie bierzemy pod uwagę podczas wyboru schodów jest bezpieczeństwo, które powinny one zapewnić domownikom. Dzięki stabilności, którą zapewniają metalowe wkręty, bukowe drewna i rzeczona balustrada, schody Franek doskonale sprawdzą się zarówno w domu, w którym mieszkają dzieci, jak i w tym, w którym obecni są seniorzy. To doskonałe połączenie trwałości i piękna, które z pewnością zachwyci miłośników nowoczesnych rozwiązań i ponadczasowej jakości."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z profila 4 x 8 cm oraz bolców do ścian", "stopnie bukowe", "balustrada szklana z szyby hartowanej"]))
                     ]);
                     
                     break;
                     
                 case "kuba":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Dębowe schody z balustradą z linkami - połączenie tradycji z nowoczesnością", [
+                            "Uniwersalność aranżacji wnętrza możliwa jest dzięki zastosowaniu materiałów ponadczasowych, tworzących wygodne, dopasowane do gustu i potrzeb wnętrze. Kształty, określające styl, w jakim utrzymana jest stylistyka pomieszczenia są ściśle związane z zastosowanym materiałem oraz precyzyjnym wykończeniem. Schody dębowe, które powstają na konstrukcji metalowej to znakomite rozwiązanie w miejscu, gdzie tradycja spotyka się z nowoczesnością. Skuś się na nowoczesne rozwiązanie przy użyciu tradycyjnych materiałów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Nośna konstrukcja, efekt lekkości", [
+                            "Wyjątkowej lekkości nadają stopnie wraz z ażurowymi odstępami. Połączone stelażem metalowym, przebiegającym przez środek stopnia schody prezentują się solidnie, a jednocześnie nie przytłaczają wnętrza. Dębowe schody z balustradą z linkami stanowią nowoczesny element wystroju. Modne, doskonale napięte linki wzmacniają efekt lekkości, zapewniając transparentność oraz swobodę użytkowania. Drewniana, gustowna balustrada o minimalistycznym kształcie zapewnia wrażenie nowoczesnego minimalizmu. Konstrukcja metalowa zapewnia stabilność, a najwyższej klasy specjaliści, zajmujący się montażem stanowią gwarancję trwałości."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Gdzie sprawdzą się dębowe schody z balustradą z linkami?", [
+                            "Stylowe i praktyczne schody na metalowej, nośnej konstrukcji doskonale sprawdzą się w domach, w których nie chcemy poświęcać schodom zbyt wiele przestrzeni. Dzięki wrażeniu lekkości optycznie powiększają przestrzeń wokół, zapewniając doskonałe dopasowanie pozostałych elementów wyposażenia domu. Znakomicie pasują do biur, w których dwupoziomowe wnętrza służą pracownikom. Schody, wyposażone w linkową balustradę, posiadają drewniana poręcz, zapewniającą bezpieczne przemieszczanie się w obydwu kierunkach. Schody z stopniami dębowymi, stanowiącymi oddzielne fragmenty, wymagają zachowania ostrożności podczas użytkowania. Efekt zachwyca i zapewnia trwałość użytkowania przez wiele lat."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna modułowa", "stopnie dębowe", "balustrada z linkami"]))
                     ]);
                     
                     break;
                     
                 case "jeremi":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Metalowo-dębowe schody Jeremi -  Ty też możesz mieć nowoczesne schody", [
+                            "Przekonanie o niedostępności nowoczesnych, stylowych schodów z uwagi na cenę nie ma zastosowania w ofercie naszej firmy. Od blisko ćwierć wieku tworzymy dla Was schody z uwzględnieniem oczekiwań, potrzeb, doskonałych materiałów oraz nowoczesnych trendów aranżacyjnych. Chcemy, aby w waszych domach schody były powodem do dumy oraz stanowiły bezpieczny, trwały i użyteczny ciąg komunikacyjny. Nasze metalowo-dębowe schody Jeremi zachwycają nowoczesnością... i przystępnością."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Czy metalowo-dębowe schody pasują do Twojego domu?", [
+                            "Konsekwencja w tworzeniu wystroju wnętrz ma duże znaczenie. Projektując swój wymarzony dom lub mieszkanie dwupoziomowe, warto wykonać wizualizację przestrzeni wewnętrznej, aby zaplanować rozmieszczenie elementów, kolorystykę oraz styl, w jakim utrzymana zostanie aranżacja. Jeżeli Twoimi ulubionymi materiałami, otaczającymi Cię we wnętrzach są metal i drewno, nie musisz z żadnego rezygnować. Połączenie ciepłego drewna z zimnym metalem przynosi nadspodziewanie dobre efekty. Czy można dołączyć trzeci składnik w postaci szkła? W pomieszczeniach, w których króluje nowoczesność i styl industrialny zdecydowanie tak."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Wyjątkowo nowoczesne, zachwycająco proste", [
+                            "Metalowo-dębowe schody Jeremi to konstrukcja z metalu, której stopnie pokryte zostały drewnem dębowym. Widoczne, metalowe połączenia nadają całości surowego charakteru, zapewniającego wzmocnienie minimalizmu w stylistyce wnętrza. Aranżacja, która bogata jest w elementy metalowe i drewniane, które poza schodami warto wykorzystać w pozostałych składowych wystroju doskonale łączy w sobie nowoczesność z ciepłem i przytulnością. Szklana balustrada sprawdzi się wtedy, gdy pomieszczenie doświetlone jest dużymi oknami, wprowadzającymi dużą ilość naturalnego światła. Balustrada transparentna umożliwi dotarcie promieni słonecznych do klatki schodowej. Schody, które oferujemy to gwarancja niezawodności i trwałości."
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna z policzków metalowych", "stopnie metalowo-dębowe", "balustrada z wypełnieniem szklanym"]))
                     ]);
                     
                     break;
                     
                 case "tytus":
                     $model->setTextParagraphs([
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Schody Tytus", [
+                            "Jesionowe schody Tytus to doskonała propozycja dla miłośników nowoczesnych wnętrz i praktycznego stylu. Bielone stopnie wykonane z drewna jesionowego oraz metalowa rama to gwarancja trwałości i doskonałej jakości."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Lekkość i nowoczesność", [
+                            "Jesionowe schody Tytus to niezwykle lekka i utrzymana w minimalistycznym designie propozycja dla  świeżych i nowoczesnych wnętrz.  Prosta i minimalistyczna konstrukcja schodów to rozwiązanie, które coraz częściej pojawia się w domach i biurach należących do osób, które znają się na najnowszych trendach. Nie ma jednak żadnych przeszkód, aby zdobiły one bardziej przytulne wnętrza, na przykład te w stylu skandynawskim. Połączenie jasnego drewna z czarną ramą to uniwersalny i elegancki zestaw, który sprawdzi się niemal w każdej przestrzeni. Drewniane stopnie doskonale skomponują się z podłogami wykonanymi z tego samego materiału. Jesionowe schody Tytus to konstrukcja, która nie zajmuje zbyt wiele miejsca, dlatego będzie się świetnie prezentować nie tylko w dużych domach, ale także w niewielkich dwupoziomowych apartamentach. Przestrzeń pod schodami może być wówczas dowolnie zaadaptowana, co stanowi dodatkowy atut proponowanych schodów."
                         ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
-                        ]),
-                        new OfferDetailsSegmentModel("", [
-                            ""
+                        new OfferDetailsSegmentModel("Stabilność przede wszystkim", [
+                            "Schody jesionowe Tytus zostały zaprojektowane w jednobelkowej stalowej konstrukcji nośnej. Zapewnia ona stabilność i niezwykły komfort użytkowania. Jesionowe drewno, z którego wykonane zostały stopnie znane jest ze swojej ogromnej trwałości, dlatego możemy mieć pewność, że montując te schody w swoim domu zapewniamy sobie wygodę i bezpieczeństwo na długie lata. Niezależnie od tego, czy w domu są dzieci lub osoby starsze, możemy mieć pewność, że schody Tytus zapewnią wszystkim mieszkańcom optymalny komfort codziennego korzystania.",
+                            "Ta doskonała konstrukcja będzie nie tylko funkcjonalnym elementem przestrzeni, ale także prawdziwą ozdobą domu, niezależnie od tego, czy planujemy, aby schody znajdowały się w hallu, czy na przykład w salonie. To idealne połączenie funkcjonalności i estetyki"
                         ])
                     ]);
 
                     $model->setGallery([
-                        new GalleryElementModel("/public/extras/images/gallery/offer/concrete/1/1.jpg", null, new LabelModel([new LabelLineModel("schody"), new LabelLineModel("na beton ", "1")], ["", "", ""]))
+                        new GalleryElementModel("/public/extras/images/gallery/offer/woodsteel/$mark/1/1.jpg", null, new LabelModel([new LabelLineModel("$mark ", "1")], ["konstrukcja nośna jednobelkowa stalowa", "stopnie jesionowe bielone"]))
                     ]);
                     
                     break;                                              
